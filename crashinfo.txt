@@ -1,0 +1,164 @@
+
+--------------------------
+SA-MP Server: 0.3.7-R2
+
+Exception At Address: 0x00401694 Module: (samp-server.exe)
+
+Registers:
+EAX: 0x00000101	EBX: 0x004B5CF4	ECX: 0x00000101	EDX: 0x6AE3B6D8
+ESI: 0x00000101	EDI: 0x0240FC3C	EBP: 0x0240FC0C	ESP: 0x0240FBA0
+EFLAGS: 0x00010212
+
+Stack:
++0000: 0x00401726   0x00000101   0x0240FBBC   0x0240FC3C
++0010: 0x00000101   0x0240FC0C   0x004B5CF4   0x00000000
++0020: 0x00000000   0x6AE3B6F8   0x0240FBD4   0x6AE02FA1
++0030: 0x0240FBE0   0x0240FC0C   0x6AE3B6D8   0x0240FBE8
++0040: 0x6AE04365   0x00000101   0x004B5CF4   0x0240FC3C
++0050: 0x6AE3B6D8   0x00000101   0x004B5CF4   0x0240FC3C
++0060: 0x007C9620   0x00000005   0x0240FD74   0x0240FD58
++0070: 0x0046B70D   0x00000101   0x004B5CF4   0x0240FC3C
++0080: 0x0240FD74   0x0240FC58   0x00000014   0x00000001
++0090: 0x004AB02B   0x00000000   0x0048B9AF   0x7FFFFFFF
++00A0: 0x75C11660   0x75C13870   0x00000000   0x0240FC58
++00B0: 0x007C0BA0   0x00000000   0x00736579   0x00000000
++00C0: 0x00000000   0x00000000   0x00000000   0x00000000
++00D0: 0x00000000   0x00000000   0x00000000   0x00000000
++00E0: 0x00000000   0x00000000   0x00000000   0x00000000
++00F0: 0x00000000   0x00000000   0x00000000   0x00000000
++0100: 0x00000000   0x00000000   0x00000000   0x00000000
++0110: 0x00000000   0x00000000   0x00000000   0x00000000
++0120: 0x00000000   0x00000000   0x00000000   0x00000000
++0130: 0x00000000   0x00000000   0x00000000   0x00000000
+
+--------------------------
+
+Loaded Modules:
+samp-server.exe	A: 0x00400000 - 0x00519000	(C:\Users\islam\Desktop\Arizona\samp-server.exe)
+ntdll.dll	A: 0x77C60000 - 0x77E03000	(C:\Windows\SYSTEM32\ntdll.dll)
+KERNEL32.DLL	A: 0x75BF0000 - 0x75CE0000	(C:\Windows\System32\KERNEL32.DLL)
+KERNELBASE.dll	A: 0x76750000 - 0x76963000	(C:\Windows\System32\KERNELBASE.dll)
+SHELL32.dll	A: 0x77360000 - 0x77911000	(C:\Windows\System32\SHELL32.dll)
+msvcp_win.dll	A: 0x77940000 - 0x779BB000	(C:\Windows\System32\msvcp_win.dll)
+ucrtbase.dll	A: 0x779C0000 - 0x77AE0000	(C:\Windows\System32\ucrtbase.dll)
+USER32.dll	A: 0x764D0000 - 0x76663000	(C:\Windows\System32\USER32.dll)
+win32u.dll	A: 0x76BF0000 - 0x76C08000	(C:\Windows\System32\win32u.dll)
+GDI32.dll	A: 0x76370000 - 0x76393000	(C:\Windows\System32\GDI32.dll)
+gdi32full.dll	A: 0x75CE0000 - 0x75DBA000	(C:\Windows\System32\gdi32full.dll)
+WINMM.dll	A: 0x74900000 - 0x74928000	(C:\Windows\SYSTEM32\WINMM.dll)
+WSOCK32.dll	A: 0x6E300000 - 0x6E308000	(C:\Windows\SYSTEM32\WSOCK32.dll)
+msvcrt.dll	A: 0x75B20000 - 0x75BDF000	(C:\Windows\System32\msvcrt.dll)
+ws2_32.DLL	A: 0x77B40000 - 0x77BA3000	(C:\Windows\System32\ws2_32.DLL)
+RPCRT4.dll	A: 0x76DE0000 - 0x76E9A000	(C:\Windows\System32\RPCRT4.dll)
+IMM32.DLL	A: 0x763A0000 - 0x763C5000	(C:\Windows\System32\IMM32.DLL)
+mysql.DLL	A: 0x6E190000 - 0x6E1DE000	(C:\Users\islam\Desktop\Arizona\plugins\mysql.DLL)
+libmariadb.dll	A: 0x6AC60000 - 0x6AD2D000	(C:\Users\islam\Desktop\Arizona\libmariadb.dll)
+log-core.dll	A: 0x6E880000 - 0x6E89A000	(C:\Users\islam\Desktop\Arizona\log-core.dll)
+VCRUNTIME140.dll	A: 0x73D80000 - 0x73D94000	(C:\Windows\SYSTEM32\VCRUNTIME140.dll)
+MSVCP140.dll	A: 0x73960000 - 0x739D0000	(C:\Windows\SYSTEM32\MSVCP140.dll)
+SHLWAPI.dll	A: 0x76480000 - 0x764C5000	(C:\Windows\System32\SHLWAPI.dll)
+CRYPT32.dll	A: 0x76270000 - 0x7636F000	(C:\Windows\System32\CRYPT32.dll)
+ADVAPI32.dll	A: 0x772E0000 - 0x77359000	(C:\Windows\System32\ADVAPI32.dll)
+Secur32.dll	A: 0x74B10000 - 0x74B1A000	(C:\Windows\SYSTEM32\Secur32.dll)
+sechost.dll	A: 0x769F0000 - 0x76A65000	(C:\Windows\System32\sechost.dll)
+SSPICLI.DLL	A: 0x74D60000 - 0x74D88000	(C:\Windows\SYSTEM32\SSPICLI.DLL)
+CRYPTBASE.DLL	A: 0x751C0000 - 0x751CA000	(C:\Windows\SYSTEM32\CRYPTBASE.DLL)
+kernel.appcore.dll	A: 0x754D0000 - 0x754DF000	(C:\Windows\SYSTEM32\kernel.appcore.dll)
+napinsp.dll	A: 0x733F0000 - 0x73401000	(C:\Windows\system32\napinsp.dll)
+pnrpnsp.dll	A: 0x6FC50000 - 0x6FC66000	(C:\Windows\system32\pnrpnsp.dll)
+wshbth.dll	A: 0x73D40000 - 0x73D50000	(C:\Windows\system32\wshbth.dll)
+NLAapi.dll	A: 0x6FC30000 - 0x6FC46000	(C:\Windows\system32\NLAapi.dll)
+IPHLPAPI.DLL	A: 0x752C0000 - 0x752F2000	(C:\Windows\SYSTEM32\IPHLPAPI.DLL)
+mswsock.dll	A: 0x753A0000 - 0x753F2000	(C:\Windows\System32\mswsock.dll)
+DNSAPI.dll	A: 0x75300000 - 0x75391000	(C:\Windows\SYSTEM32\DNSAPI.dll)
+NSI.dll	A: 0x75BE0000 - 0x75BE7000	(C:\Windows\System32\NSI.dll)
+winrnr.dll	A: 0x73900000 - 0x7390E000	(C:\Windows\System32\winrnr.dll)
+rasadhlp.dll	A: 0x752B0000 - 0x752B8000	(C:\Windows\System32\rasadhlp.dll)
+MSVCR100.dll	A: 0x69BF0000 - 0x69CAF000	(C:\Windows\SYSTEM32\MSVCR100.dll)
+MSVCP100.dll	A: 0x6A1A0000 - 0x6A209000	(C:\Windows\SYSTEM32\MSVCP100.dll)
+streamer.DLL	A: 0x6AE00000 - 0x6AE4C000	(C:\Users\islam\Desktop\Arizona\plugins\streamer.DLL)
+sscanf.DLL	A: 0x10000000 - 0x1000D000	(C:\Users\islam\Desktop\Arizona\plugins\sscanf.DLL)
+pawncmd.DLL	A: 0x6DF10000 - 0x6DF48000	(C:\Users\islam\Desktop\Arizona\plugins\pawncmd.DLL)
+pawnregex.DLL	A: 0x6B240000 - 0x6B273000	(C:\Users\islam\Desktop\Arizona\plugins\pawnregex.DLL)
+
+--------------------------
+SA-MP Server: 0.3.7-R2
+
+Exception At Address: 0x00401694 Module: (samp-server.exe)
+
+Registers:
+EAX: 0x00000101	EBX: 0x004B5CF4	ECX: 0x00000101	EDX: 0x6AE3B6D8
+ESI: 0x00000101	EDI: 0x027BFC3C	EBP: 0x027BFC0C	ESP: 0x027BFBA0
+EFLAGS: 0x00010212
+
+Stack:
++0000: 0x00401726   0x00000101   0x027BFBBC   0x027BFC3C
++0010: 0x00000101   0x027BFC0C   0x004B5CF4   0x00000000
++0020: 0x00000000   0x6AE3B6F8   0x027BFBD4   0x6AE02FA1
++0030: 0x027BFBE0   0x027BFC0C   0x6AE3B6D8   0x027BFBE8
++0040: 0x6AE04365   0x00000101   0x004B5CF4   0x027BFC3C
++0050: 0x6AE3B6D8   0x00000101   0x004B5CF4   0x027BFC3C
++0060: 0x022A9620   0x00000005   0x027BFD74   0x027BFD58
++0070: 0x0046B70D   0x00000101   0x004B5CF4   0x027BFC3C
++0080: 0x027BFD74   0x027BFC58   0x00000014   0x00000001
++0090: 0x004AB02B   0x00000000   0x0048B9AF   0x7FFFFFFF
++00A0: 0x75C11660   0x75C13870   0x00000000   0x027BFC58
++00B0: 0x022A0BA0   0x00000000   0x00736579   0x00000000
++00C0: 0x00000000   0x00000000   0x00000000   0x00000000
++00D0: 0x00000000   0x00000000   0x00000000   0x00000000
++00E0: 0x00000000   0x00000000   0x00000000   0x00000000
++00F0: 0x00000000   0x00000000   0x00000000   0x00000000
++0100: 0x00000000   0x00000000   0x00000000   0x00000000
++0110: 0x00000000   0x00000000   0x00000000   0x00000000
++0120: 0x00000000   0x00000000   0x00000000   0x00000000
++0130: 0x00000000   0x00000000   0x00000000   0x00000000
+
+--------------------------
+
+Loaded Modules:
+samp-server.exe	A: 0x00400000 - 0x00519000	(C:\Users\islam\Desktop\Arizona\samp-server.exe)
+ntdll.dll	A: 0x77C60000 - 0x77E03000	(C:\Windows\SYSTEM32\ntdll.dll)
+KERNEL32.DLL	A: 0x75BF0000 - 0x75CE0000	(C:\Windows\System32\KERNEL32.DLL)
+KERNELBASE.dll	A: 0x76750000 - 0x76963000	(C:\Windows\System32\KERNELBASE.dll)
+SHELL32.dll	A: 0x77360000 - 0x77911000	(C:\Windows\System32\SHELL32.dll)
+msvcp_win.dll	A: 0x77940000 - 0x779BB000	(C:\Windows\System32\msvcp_win.dll)
+ucrtbase.dll	A: 0x779C0000 - 0x77AE0000	(C:\Windows\System32\ucrtbase.dll)
+USER32.dll	A: 0x764D0000 - 0x76663000	(C:\Windows\System32\USER32.dll)
+win32u.dll	A: 0x76BF0000 - 0x76C08000	(C:\Windows\System32\win32u.dll)
+GDI32.dll	A: 0x76370000 - 0x76393000	(C:\Windows\System32\GDI32.dll)
+gdi32full.dll	A: 0x75CE0000 - 0x75DBA000	(C:\Windows\System32\gdi32full.dll)
+WINMM.dll	A: 0x74900000 - 0x74928000	(C:\Windows\SYSTEM32\WINMM.dll)
+WSOCK32.dll	A: 0x6E300000 - 0x6E308000	(C:\Windows\SYSTEM32\WSOCK32.dll)
+msvcrt.dll	A: 0x75B20000 - 0x75BDF000	(C:\Windows\System32\msvcrt.dll)
+ws2_32.DLL	A: 0x77B40000 - 0x77BA3000	(C:\Windows\System32\ws2_32.DLL)
+RPCRT4.dll	A: 0x76DE0000 - 0x76E9A000	(C:\Windows\System32\RPCRT4.dll)
+IMM32.DLL	A: 0x763A0000 - 0x763C5000	(C:\Windows\System32\IMM32.DLL)
+mysql.DLL	A: 0x6E190000 - 0x6E1DE000	(C:\Users\islam\Desktop\Arizona\plugins\mysql.DLL)
+libmariadb.dll	A: 0x6AC60000 - 0x6AD2D000	(C:\Users\islam\Desktop\Arizona\libmariadb.dll)
+log-core.dll	A: 0x6E880000 - 0x6E89A000	(C:\Users\islam\Desktop\Arizona\log-core.dll)
+MSVCP140.dll	A: 0x73960000 - 0x739D0000	(C:\Windows\SYSTEM32\MSVCP140.dll)
+VCRUNTIME140.dll	A: 0x73D80000 - 0x73D94000	(C:\Windows\SYSTEM32\VCRUNTIME140.dll)
+SHLWAPI.dll	A: 0x76480000 - 0x764C5000	(C:\Windows\System32\SHLWAPI.dll)
+CRYPT32.dll	A: 0x76270000 - 0x7636F000	(C:\Windows\System32\CRYPT32.dll)
+Secur32.dll	A: 0x74B10000 - 0x74B1A000	(C:\Windows\SYSTEM32\Secur32.dll)
+ADVAPI32.dll	A: 0x772E0000 - 0x77359000	(C:\Windows\System32\ADVAPI32.dll)
+sechost.dll	A: 0x769F0000 - 0x76A65000	(C:\Windows\System32\sechost.dll)
+SSPICLI.DLL	A: 0x74D60000 - 0x74D88000	(C:\Windows\SYSTEM32\SSPICLI.DLL)
+CRYPTBASE.DLL	A: 0x751C0000 - 0x751CA000	(C:\Windows\SYSTEM32\CRYPTBASE.DLL)
+kernel.appcore.dll	A: 0x754D0000 - 0x754DF000	(C:\Windows\SYSTEM32\kernel.appcore.dll)
+napinsp.dll	A: 0x733F0000 - 0x73401000	(C:\Windows\system32\napinsp.dll)
+pnrpnsp.dll	A: 0x6FC50000 - 0x6FC66000	(C:\Windows\system32\pnrpnsp.dll)
+wshbth.dll	A: 0x73D40000 - 0x73D50000	(C:\Windows\system32\wshbth.dll)
+NLAapi.dll	A: 0x6FC30000 - 0x6FC46000	(C:\Windows\system32\NLAapi.dll)
+IPHLPAPI.DLL	A: 0x752C0000 - 0x752F2000	(C:\Windows\SYSTEM32\IPHLPAPI.DLL)
+mswsock.dll	A: 0x753A0000 - 0x753F2000	(C:\Windows\System32\mswsock.dll)
+DNSAPI.dll	A: 0x75300000 - 0x75391000	(C:\Windows\SYSTEM32\DNSAPI.dll)
+NSI.dll	A: 0x75BE0000 - 0x75BE7000	(C:\Windows\System32\NSI.dll)
+winrnr.dll	A: 0x73900000 - 0x7390E000	(C:\Windows\System32\winrnr.dll)
+rasadhlp.dll	A: 0x752B0000 - 0x752B8000	(C:\Windows\System32\rasadhlp.dll)
+MSVCP100.dll	A: 0x69C40000 - 0x69CA9000	(C:\Windows\SYSTEM32\MSVCP100.dll)
+MSVCR100.dll	A: 0x6A150000 - 0x6A20F000	(C:\Windows\SYSTEM32\MSVCR100.dll)
+streamer.DLL	A: 0x6AE00000 - 0x6AE4C000	(C:\Users\islam\Desktop\Arizona\plugins\streamer.DLL)
+sscanf.DLL	A: 0x10000000 - 0x1000D000	(C:\Users\islam\Desktop\Arizona\plugins\sscanf.DLL)
+pawncmd.DLL	A: 0x6DF10000 - 0x6DF48000	(C:\Users\islam\Desktop\Arizona\plugins\pawncmd.DLL)
+pawnregex.DLL	A: 0x6B240000 - 0x6B273000	(C:\Users\islam\Desktop\Arizona\plugins\pawnregex.DLL)
