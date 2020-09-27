@@ -135,6 +135,8 @@ public OnPlayerConnect(playerid)
 	new query[sizeof(fmt_query)+(-2+MAX_PLAYER_NAME)];
 	format(query, sizeof(query), fmt_query, player_info[playerid][NAME]);
 	mysql_tquery(dbHandle, query, "CheckRegistration", "id", playerid);
+
+	SetPVarInt(playerid, "WrongPassword", 3);
 	return 1;
 }
 
@@ -155,7 +157,7 @@ public CheckRegistration(playerid)
 
 stock ShowLogin(playerid)
 {
-	new dialog[171+(-2+MAX_PLAYER_NAME)];
+	new dialog[151+(-2+MAX_PLAYER_NAME)];
 	format(dialog, sizeof(dialog),
 	"{FFFFFF} Dear {0089ff}%s{FFFFFF}, welcome back to {0089ff}Montana RolePlay!{FFFFFF}\nWe glad to see you back!\nFor continue enter your password in box below:",
 	player_info[playerid][NAME]);
@@ -164,7 +166,7 @@ stock ShowLogin(playerid)
 
 stock ShowRegistration(playerid)
 {
-	new dialog[403+(-2+MAX_PLAYER_NAME)];
+	new dialog[380+(-2+MAX_PLAYER_NAME)];
 	format(dialog, sizeof(dialog),
 	    "{FFFFFF}Dear {0089ff}%s{FFFFFF}, we are happy to see you in {0089ff}Montana RolePlay!{FFFFFF}\n\
 		Account with this nickname is not registered\n\
@@ -360,7 +362,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{
 				case 0:
 				{
-					SetPlayerPos(playerid, 1757.2987,-1896.4974,13.5610,269.7200);
+					SetPlayerPos(playerid, 1757.2987,-1896.4974,13.5610);
 					SCM(playerid, COLOR_WHITE, "You have been teleported in Los-Santos");
 				}
 	  			case 1:
@@ -557,11 +559,24 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SHA256_PassHash(inputtext,player_info[playerid][SALT], checkpass, 65);
 				if (!strcmp(player_info[playerid][PASSWORD], checkpass))
 				{
-					SCM(playerid, COLOR_BLUE, "CORRECT PASSWORD");
+					static const fmt_query[] = " SELECT * FROM `users` WHERE `name` = '%s' AND `password` = '%s'";
+					new query[sizeof(fmt_query)+(2-MAX_PLAYER_NAME)+(-2+64)];
+					format(query, sizeof(query), fmt_query, player_info[playerid][NAME],player_info[playerid][PASSWORD]);
+					mysql_tquery(dbHandle, query, "PlayerLogin", "id", playerid);
 				}
 				else
 				{
-					SCM(playerid, COLOR_BLUE, "INCORRECT PASSWORD");
+					new string[71];
+					if(GetPVarInt(playerid, "WrongPassword") > 0)
+					{
+						format(string, sizeof(string), "[Error] {FFFFFF} You entered wrong password. You have %d attempts left.", GetPVarInt(playerid, "WrongPassword"));
+						SCM(playerid, COLOR_RED, string);
+					}
+					if(GetPVarInt(playerid, "WrongPassword") > 0)
+					{
+						SCM(playerid, COLOR_RED, "[Error] {FFFFFF} You have no attempts left and was kicked from server.");
+						Kick(playerid);
+					}
 					ShowLogin(playerid);
 				}
 			}
