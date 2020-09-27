@@ -146,8 +146,8 @@ public CheckRegistration(playerid)
 	cache_get_row_count(rows);
 	if(rows) 
 	{
-		cache_get_value_name(0, "password", player_info[playerid][PASSWORD], 64);
-		cache_get_value_name(0, "salt", player_info[playerid][SALT], 64);
+		cache_get_value_name(0, "password", player_info[playerid][PASSWORD], 65);
+		cache_get_value_name(0, "salt", player_info[playerid][SALT], 11);
 		ShowLogin(playerid);
 	}
 	else ShowRegistration(playerid);
