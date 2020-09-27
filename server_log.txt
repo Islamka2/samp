@@ -10945,3 +10945,748 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [00:00:38] [connection] 25.82.56.152:58265 requests connection cookie.
 [00:00:39] [connection] incoming connection: 25.82.56.152:58265 id: 1
 [00:00:40] [join] Robert_Shelby has joined the server (1:25.82.56.152)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:24:54] filterscripts = ""  (string)
+[00:24:54] 
+[00:24:54] Server Plugins
+[00:24:54] --------------
+[00:24:54]  Loading plugin: mysql
+[00:24:54]  >> plugin.mysql: R41-4 successfully loaded.
+[00:24:54]   Loaded.
+[00:24:54]  Loading plugin: crashdetect
+[00:24:54]   CrashDetect v4.18.1 is OK.
+[00:24:54]   Loaded.
+[00:24:54]  Loading plugin: streamer
+[00:24:54] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:24:54]   Loaded.
+[00:24:54]  Loading plugin: sscanf
+[00:24:54] 
+
+[00:24:54]  ===============================
+
+[00:24:54]       sscanf plugin loaded.     
+
+[00:24:54]          Version:  2.8.1        
+
+[00:24:54]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:24:54]  ===============================
+
+[00:24:54]   Loaded.
+[00:24:54]  Loading plugin: pawncmd
+[00:24:54] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:24:54]   Loaded.
+[00:24:54]  Loading plugin: pawnregex
+[00:24:54] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:24:54]   Loaded.
+[00:24:54]  Loaded 6 plugins.
+
+[00:24:54] 
+[00:24:54] Filterscripts
+[00:24:54] ---------------
+[00:24:54]   Loaded 0 filterscripts.
+
+[00:24:54] mySQL worked!
+[00:24:54] 
+----------------------------------
+[00:24:54] Montana RolePlay
+[00:24:54] ----------------------------------
+
+[00:24:54] Number of vehicle models: 2
+[00:24:56] [connection] 127.0.0.1:58564 requests connection cookie.
+[00:24:57] [connection] incoming connection: 127.0.0.1:58564 id: 0
+[00:24:58] [join] lol has joined the server (0:127.0.0.1)
+[00:25:08] [part] lol has left the server (0:1)
+[00:25:35] [connection] 127.0.0.1:54321 requests connection cookie.
+[00:25:36] [connection] incoming connection: 127.0.0.1:54321 id: 0
+[00:25:36] [join] Yarik has joined the server (0:127.0.0.1)
+[00:26:13] [part] Yarik has left the server (0:1)
+[00:26:31] [connection] 127.0.0.1:57653 requests connection cookie.
+[00:26:32] [connection] incoming connection: 127.0.0.1:57653 id: 0
+[00:26:33] [join] Yarik has joined the server (0:127.0.0.1)
+[00:26:35] [part] Yarik has left the server (0:2)
+[00:26:55] [connection] 127.0.0.1:64794 requests connection cookie.
+[00:26:56] [connection] incoming connection: 127.0.0.1:64794 id: 0
+[00:26:57] [join] Yarik has joined the server (0:127.0.0.1)
+[00:27:24] [part] Yarik has left the server (0:1)
+[00:28:03] [connection] 127.0.0.1:62118 requests connection cookie.
+[00:28:04] [connection] incoming connection: 127.0.0.1:62118 id: 0
+[00:28:04] [join] Yarik has joined the server (0:127.0.0.1)
+[00:28:41] [connection] 25.82.56.152:64809 requests connection cookie.
+[00:28:42] [connection] incoming connection: 25.82.56.152:64809 id: 1
+[00:28:42] [join] Robert_Shelby123 has joined the server (1:25.82.56.152)
+[00:29:21] [part] Robert_Shelby123 has left the server (1:2)
+[00:29:32] [connection] incoming connection: 25.82.56.152:56161 id: 1
+[00:29:32] [join] Robert_Shelby123 has joined the server (1:25.82.56.152)
+[00:30:25] [part] Robert_Shelby123 has left the server (1:1)
+[00:31:04] [connection] 25.82.56.152:59955 requests connection cookie.
+[00:31:05] [connection] incoming connection: 25.82.56.152:59955 id: 1
+[00:31:05] [join] Robert_Shelby123 has joined the server (1:25.82.56.152)
+[00:31:59] [part] Yarik has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:32:03] filterscripts = ""  (string)
+[00:32:03] 
+[00:32:03] Server Plugins
+[00:32:03] --------------
+[00:32:03]  Loading plugin: mysql
+[00:32:03]  >> plugin.mysql: R41-4 successfully loaded.
+[00:32:03]   Loaded.
+[00:32:03]  Loading plugin: crashdetect
+[00:32:03]   CrashDetect v4.18.1 is OK.
+[00:32:03]   Loaded.
+[00:32:03]  Loading plugin: streamer
+[00:32:03] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:32:03]   Loaded.
+[00:32:03]  Loading plugin: sscanf
+[00:32:03] 
+
+[00:32:03]  ===============================
+
+[00:32:03]       sscanf plugin loaded.     
+
+[00:32:03]          Version:  2.8.1        
+
+[00:32:03]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:32:03]  ===============================
+
+[00:32:03]   Loaded.
+[00:32:03]  Loading plugin: pawncmd
+[00:32:03] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:32:03]   Loaded.
+[00:32:03]  Loading plugin: pawnregex
+[00:32:03] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:32:03]   Loaded.
+[00:32:03]  Loaded 6 plugins.
+
+[00:32:03] 
+[00:32:03] Filterscripts
+[00:32:03] ---------------
+[00:32:03]   Loaded 0 filterscripts.
+
+[00:32:03] mySQL worked!
+[00:32:03] 
+----------------------------------
+[00:32:03] Montana RolePlay
+[00:32:03] ----------------------------------
+
+[00:32:03] Number of vehicle models: 2
+[00:32:22] [connection] 127.0.0.1:55970 requests connection cookie.
+[00:32:23] [connection] incoming connection: 127.0.0.1:55970 id: 0
+[00:32:23] [join] Yarik has joined the server (0:127.0.0.1)
+[00:32:32] [part] Yarik has left the server (0:1)
+[00:32:46] [connection] incoming connection: 25.82.56.152:56115 id: 0
+[00:32:51] [connection] 127.0.0.1:51721 requests connection cookie.
+[00:32:52] [connection] incoming connection: 127.0.0.1:51721 id: 0
+[00:32:52] [join] Yarik has joined the server (0:127.0.0.1)
+[00:33:02] [part] Robert_Shelby123 has left the server (1:0)
+[00:33:04] [connection] incoming connection: 25.82.56.152:56118 id: 1
+[00:33:05] [join] Robert_Shelby123 has joined the server (1:25.82.56.152)
+[00:34:40] [part] Yarik has left the server (0:1)
+[00:34:48] [part] Robert_Shelby123 has left the server (1:1)
+[00:35:04] [connection] 25.82.56.152:65398 requests connection cookie.
+[00:35:05] [connection] incoming connection: 25.82.56.152:65398 id: 0
+[00:35:06] [join] Robert_Shelby has joined the server (0:25.82.56.152)
+[00:35:24] [part] Robert_Shelby has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:38:06] filterscripts = ""  (string)
+[00:38:06] 
+[00:38:06] Server Plugins
+[00:38:06] --------------
+[00:38:06]  Loading plugin: mysql
+[00:38:06]  >> plugin.mysql: R41-4 successfully loaded.
+[00:38:06]   Loaded.
+[00:38:06]  Loading plugin: crashdetect
+[00:38:06]   CrashDetect v4.18.1 is OK.
+[00:38:06]   Loaded.
+[00:38:06]  Loading plugin: streamer
+[00:38:06] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:38:06]   Loaded.
+[00:38:06]  Loading plugin: sscanf
+[00:38:06] 
+
+[00:38:06]  ===============================
+
+[00:38:06]       sscanf plugin loaded.     
+
+[00:38:06]          Version:  2.8.1        
+
+[00:38:06]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:38:06]  ===============================
+
+[00:38:06]   Loaded.
+[00:38:06]  Loading plugin: pawncmd
+[00:38:06] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:38:06]   Loaded.
+[00:38:06]  Loading plugin: pawnregex
+[00:38:06] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:38:06]   Loaded.
+[00:38:06]  Loaded 6 plugins.
+
+[00:38:06] 
+[00:38:06] Filterscripts
+[00:38:06] ---------------
+[00:38:06]   Loaded 0 filterscripts.
+
+[00:38:06] mySQL worked!
+[00:38:06] 
+----------------------------------
+[00:38:06] Montana RolePlay
+[00:38:06] ----------------------------------
+
+[00:38:06] Number of vehicle models: 2
+[00:38:25] [connection] 127.0.0.1:62715 requests connection cookie.
+[00:38:26] [connection] incoming connection: 127.0.0.1:62715 id: 0
+[00:38:26] [join] Yarik has joined the server (0:127.0.0.1)
+[00:38:40] [part] Yarik has left the server (0:1)
+[00:40:23] [connection] 127.0.0.1:49349 requests connection cookie.
+[00:40:24] [connection] incoming connection: 127.0.0.1:49349 id: 0
+[00:40:24] [join] Yarik has joined the server (0:127.0.0.1)
+[00:40:30] [part] Yarik has left the server (0:2)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:40:45] filterscripts = ""  (string)
+[00:40:45] 
+[00:40:45] Server Plugins
+[00:40:45] --------------
+[00:40:45]  Loading plugin: mysql
+[00:40:46]  >> plugin.mysql: R41-4 successfully loaded.
+[00:40:46]   Loaded.
+[00:40:46]  Loading plugin: crashdetect
+[00:40:46]   CrashDetect v4.18.1 is OK.
+[00:40:46]   Loaded.
+[00:40:46]  Loading plugin: streamer
+[00:40:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:40:46]   Loaded.
+[00:40:46]  Loading plugin: sscanf
+[00:40:46] 
+
+[00:40:46]  ===============================
+
+[00:40:46]       sscanf plugin loaded.     
+
+[00:40:46]          Version:  2.8.1        
+
+[00:40:46]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:40:46]  ===============================
+
+[00:40:46]   Loaded.
+[00:40:46]  Loading plugin: pawncmd
+[00:40:46] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:40:46]   Loaded.
+[00:40:46]  Loading plugin: pawnregex
+[00:40:46] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:40:46]   Loaded.
+[00:40:46]  Loaded 6 plugins.
+
+[00:40:46] 
+[00:40:46] Filterscripts
+[00:40:46] ---------------
+[00:40:46]   Loaded 0 filterscripts.
+
+[00:40:46] mySQL worked!
+[00:40:46] 
+----------------------------------
+[00:40:46] Montana RolePlay
+[00:40:46] ----------------------------------
+
+[00:40:46] Number of vehicle models: 2
+[00:41:04] [connection] 127.0.0.1:61488 requests connection cookie.
+[00:41:05] [connection] incoming connection: 127.0.0.1:61488 id: 0
+[00:41:05] [join] Yarik has joined the server (0:127.0.0.1)
+[00:41:14] [part] Yarik has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:42:37] filterscripts = ""  (string)
+[00:42:37] 
+[00:42:37] Server Plugins
+[00:42:37] --------------
+[00:42:37]  Loading plugin: mysql
+[00:42:37]  >> plugin.mysql: R41-4 successfully loaded.
+[00:42:37]   Loaded.
+[00:42:37]  Loading plugin: crashdetect
+[00:42:37]   CrashDetect v4.18.1 is OK.
+[00:42:37]   Loaded.
+[00:42:37]  Loading plugin: streamer
+[00:42:37] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:42:37]   Loaded.
+[00:42:37]  Loading plugin: sscanf
+[00:42:37] 
+
+[00:42:37]  ===============================
+
+[00:42:37]       sscanf plugin loaded.     
+
+[00:42:37]          Version:  2.8.1        
+
+[00:42:37]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:42:37]  ===============================
+
+[00:42:37]   Loaded.
+[00:42:37]  Loading plugin: pawncmd
+[00:42:37] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:42:37]   Loaded.
+[00:42:37]  Loading plugin: pawnregex
+[00:42:37] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:42:37]   Loaded.
+[00:42:37]  Loaded 6 plugins.
+
+[00:42:37] 
+[00:42:37] Filterscripts
+[00:42:37] ---------------
+[00:42:37]   Loaded 0 filterscripts.
+
+[00:42:37] mySQL worked!
+[00:42:37] 
+----------------------------------
+[00:42:37] Montana RolePlay
+[00:42:37] ----------------------------------
+
+[00:42:37] Number of vehicle models: 2
+[00:42:58] [connection] 127.0.0.1:62631 requests connection cookie.
+[00:42:59] [connection] incoming connection: 127.0.0.1:62631 id: 0
+[00:42:59] [join] Yarik has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:43:49] filterscripts = ""  (string)
+[00:43:49] 
+[00:43:49] Server Plugins
+[00:43:49] --------------
+[00:43:49]  Loading plugin: mysql
+[00:43:49]  >> plugin.mysql: R41-4 successfully loaded.
+[00:43:49]   Loaded.
+[00:43:49]  Loading plugin: crashdetect
+[00:43:49]   CrashDetect v4.18.1 is OK.
+[00:43:49]   Loaded.
+[00:43:49]  Loading plugin: streamer
+[00:43:49] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:43:49]   Loaded.
+[00:43:49]  Loading plugin: sscanf
+[00:43:49] 
+
+[00:43:49]  ===============================
+
+[00:43:49]       sscanf plugin loaded.     
+
+[00:43:49]          Version:  2.8.1        
+
+[00:43:49]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:43:49]  ===============================
+
+[00:43:49]   Loaded.
+[00:43:49]  Loading plugin: pawncmd
+[00:43:49] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:43:49]   Loaded.
+[00:43:49]  Loading plugin: pawnregex
+[00:43:49] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:43:49]   Loaded.
+[00:43:49]  Loaded 6 plugins.
+
+[00:43:49] 
+[00:43:49] Filterscripts
+[00:43:49] ---------------
+[00:43:49]   Loaded 0 filterscripts.
+
+[00:43:49] mySQL worked!
+[00:43:49] 
+----------------------------------
+[00:43:49] Montana RolePlay
+[00:43:49] ----------------------------------
+
+[00:43:49] Number of vehicle models: 2
+[00:44:03] [connection] 127.0.0.1:50999 requests connection cookie.
+[00:44:04] [connection] incoming connection: 127.0.0.1:50999 id: 0
+[00:44:04] [join] Yarik has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:46:31] filterscripts = ""  (string)
+[00:46:31] 
+[00:46:31] Server Plugins
+[00:46:31] --------------
+[00:46:31]  Loading plugin: mysql
+[00:46:31]  >> plugin.mysql: R41-4 successfully loaded.
+[00:46:31]   Loaded.
+[00:46:31]  Loading plugin: crashdetect
+[00:46:31]   CrashDetect v4.18.1 is OK.
+[00:46:31]   Loaded.
+[00:46:31]  Loading plugin: streamer
+[00:46:31] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:46:31]   Loaded.
+[00:46:31]  Loading plugin: sscanf
+[00:46:31] 
+
+[00:46:31]  ===============================
+
+[00:46:31]       sscanf plugin loaded.     
+
+[00:46:31]          Version:  2.8.1        
+
+[00:46:31]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:46:31]  ===============================
+
+[00:46:31]   Loaded.
+[00:46:31]  Loading plugin: pawncmd
+[00:46:31] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:46:31]   Loaded.
+[00:46:31]  Loading plugin: pawnregex
+[00:46:31] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:46:31]   Loaded.
+[00:46:31]  Loaded 6 plugins.
+
+[00:46:31] 
+[00:46:31] Filterscripts
+[00:46:31] ---------------
+[00:46:31]   Loaded 0 filterscripts.
+
+[00:46:31] mySQL worked!
+[00:46:31] 
+----------------------------------
+[00:46:31] Montana RolePlay
+[00:46:31] ----------------------------------
+
+[00:46:31] Number of vehicle models: 2
+[00:46:41] [connection] 127.0.0.1:62052 requests connection cookie.
+[00:46:42] [connection] incoming connection: 127.0.0.1:62052 id: 0
+[00:46:42] [join] Yarik has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:48:31] filterscripts = ""  (string)
+[00:48:31] 
+[00:48:31] Server Plugins
+[00:48:31] --------------
+[00:48:31]  Loading plugin: mysql
+[00:48:31]  >> plugin.mysql: R41-4 successfully loaded.
+[00:48:31]   Loaded.
+[00:48:31]  Loading plugin: crashdetect
+[00:48:31]   CrashDetect v4.18.1 is OK.
+[00:48:31]   Loaded.
+[00:48:31]  Loading plugin: streamer
+[00:48:31] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:48:31]   Loaded.
+[00:48:31]  Loading plugin: sscanf
+[00:48:31] 
+
+[00:48:31]  ===============================
+
+[00:48:31]       sscanf plugin loaded.     
+
+[00:48:31]          Version:  2.8.1        
+
+[00:48:31]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:48:31]  ===============================
+
+[00:48:31]   Loaded.
+[00:48:31]  Loading plugin: pawncmd
+[00:48:31] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:48:31]   Loaded.
+[00:48:31]  Loading plugin: pawnregex
+[00:48:31] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:48:31]   Loaded.
+[00:48:31]  Loaded 6 plugins.
+
+[00:48:31] 
+[00:48:31] Filterscripts
+[00:48:31] ---------------
+[00:48:31]   Loaded 0 filterscripts.
+
+[00:48:31] mySQL worked!
+[00:48:31] 
+----------------------------------
+[00:48:31] Montana RolePlay
+[00:48:31] ----------------------------------
+
+[00:48:31] Number of vehicle models: 2
+[00:48:47] [connection] 127.0.0.1:60550 requests connection cookie.
+[00:48:48] [connection] incoming connection: 127.0.0.1:60550 id: 0
+[00:48:49] [join] Yarik has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:50:49] filterscripts = ""  (string)
+[00:50:49] 
+[00:50:49] Server Plugins
+[00:50:49] --------------
+[00:50:49]  Loading plugin: mysql
+[00:50:49]  >> plugin.mysql: R41-4 successfully loaded.
+[00:50:49]   Loaded.
+[00:50:49]  Loading plugin: crashdetect
+[00:50:49]   CrashDetect v4.18.1 is OK.
+[00:50:49]   Loaded.
+[00:50:49]  Loading plugin: streamer
+[00:50:49] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:50:49]   Loaded.
+[00:50:49]  Loading plugin: sscanf
+[00:50:49] 
+
+[00:50:49]  ===============================
+
+[00:50:49]       sscanf plugin loaded.     
+
+[00:50:49]          Version:  2.8.1        
+
+[00:50:49]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:50:49]  ===============================
+
+[00:50:49]   Loaded.
+[00:50:49]  Loading plugin: pawncmd
+[00:50:49] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:50:49]   Loaded.
+[00:50:49]  Loading plugin: pawnregex
+[00:50:49] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:50:49]   Loaded.
+[00:50:49]  Loaded 6 plugins.
+
+[00:50:49] 
+[00:50:49] Filterscripts
+[00:50:49] ---------------
+[00:50:49]   Loaded 0 filterscripts.
+
+[00:50:50] mySQL worked!
+[00:50:50] 
+----------------------------------
+[00:50:50] Montana RolePlay
+[00:50:50] ----------------------------------
+
+[00:50:50] Number of vehicle models: 2
+[00:50:59] [connection] 127.0.0.1:59603 requests connection cookie.
+[00:51:00] [connection] incoming connection: 127.0.0.1:59603 id: 0
+[00:51:01] [join] Yarik has joined the server (0:127.0.0.1)
+[00:51:46] [part] Yarik has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:52:20] filterscripts = ""  (string)
+[00:52:20] 
+[00:52:20] Server Plugins
+[00:52:20] --------------
+[00:52:20]  Loading plugin: mysql
+[00:52:20]  >> plugin.mysql: R41-4 successfully loaded.
+[00:52:20]   Loaded.
+[00:52:20]  Loading plugin: crashdetect
+[00:52:20]   CrashDetect v4.18.1 is OK.
+[00:52:20]   Loaded.
+[00:52:20]  Loading plugin: streamer
+[00:52:20] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:52:20]   Loaded.
+[00:52:20]  Loading plugin: sscanf
+[00:52:20] 
+
+[00:52:20]  ===============================
+
+[00:52:20]       sscanf plugin loaded.     
+
+[00:52:20]          Version:  2.8.1        
+
+[00:52:20]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:52:20]  ===============================
+
+[00:52:20]   Loaded.
+[00:52:20]  Loading plugin: pawncmd
+[00:52:20] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:52:20]   Loaded.
+[00:52:20]  Loading plugin: pawnregex
+[00:52:20] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:52:20]   Loaded.
+[00:52:20]  Loaded 6 plugins.
+
+[00:52:20] 
+[00:52:20] Filterscripts
+[00:52:20] ---------------
+[00:52:20]   Loaded 0 filterscripts.
+
+[00:52:20] mySQL worked!
+[00:52:20] 
+----------------------------------
+[00:52:20] Montana RolePlay
+[00:52:20] ----------------------------------
+
+[00:52:20] Number of vehicle models: 2
+[00:52:38] [connection] 127.0.0.1:64260 requests connection cookie.
+[00:52:39] [connection] incoming connection: 127.0.0.1:64260 id: 0
+[00:52:39] [join] Loh has joined the server (0:127.0.0.1)
+[00:53:19] [connection] incoming connection: 127.0.0.1:57638 id: 1
+[00:53:24] [connection] incoming connection: 127.0.0.1:57639 id: 1
+[00:53:27] [connection] incoming connection: 127.0.0.1:57644 id: 1
+[00:53:28] [part] Loh has left the server (0:0)
+[00:53:29] [connection] incoming connection: 127.0.0.1:57646 id: 0
+[00:53:29] [join] Loh has joined the server (0:127.0.0.1)
+[00:54:28] [connection] 25.82.56.152:60143 requests connection cookie.
+[00:54:29] [connection] incoming connection: 25.82.56.152:60143 id: 1
+[00:54:29] [join] Yarik has joined the server (1:25.82.56.152)
+[00:54:30] [part] Loh has left the server (0:0)
+[00:54:42] [part] Yarik has left the server (1:1)
+[00:54:50] [connection] incoming connection: 127.0.0.1:56681 id: 0
+[00:55:00] [connection] incoming connection: 127.0.0.1:56688 id: 0
+[00:55:00] [join] Loh has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:56:21] filterscripts = ""  (string)
+[00:56:21] 
+[00:56:21] Server Plugins
+[00:56:21] --------------
+[00:56:21]  Loading plugin: mysql
+[00:56:21]  >> plugin.mysql: R41-4 successfully loaded.
+[00:56:21]   Loaded.
+[00:56:21]  Loading plugin: crashdetect
+[00:56:21]   CrashDetect v4.18.1 is OK.
+[00:56:21]   Loaded.
+[00:56:21]  Loading plugin: streamer
+[00:56:21] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:56:21]   Loaded.
+[00:56:21]  Loading plugin: sscanf
+[00:56:21] 
+
+[00:56:21]  ===============================
+
+[00:56:21]       sscanf plugin loaded.     
+
+[00:56:21]          Version:  2.8.1        
+
+[00:56:21]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:56:21]  ===============================
+
+[00:56:21]   Loaded.
+[00:56:21]  Loading plugin: pawncmd
+[00:56:21] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:56:21]   Loaded.
+[00:56:21]  Loading plugin: pawnregex
+[00:56:21] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:56:21]   Loaded.
+[00:56:21]  Loaded 6 plugins.
+
+[00:56:21] 
+[00:56:21] Filterscripts
+[00:56:21] ---------------
+[00:56:21]   Loaded 0 filterscripts.
+
+[00:56:21] mySQL worked!
+[00:56:21] 
+----------------------------------
+[00:56:21] Montana RolePlay
+[00:56:21] ----------------------------------
+
+[00:56:21] Number of vehicle models: 2
+[00:56:34] [connection] 127.0.0.1:62020 requests connection cookie.
+[00:56:35] [connection] incoming connection: 127.0.0.1:62020 id: 0
+[00:56:45] [connection] incoming connection: 127.0.0.1:62025 id: 0
+[00:56:45] [join] Loh has joined the server (0:127.0.0.1)

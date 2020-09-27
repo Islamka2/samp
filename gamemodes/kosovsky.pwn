@@ -127,7 +127,7 @@ public OnPlayerConnect(playerid)
 	GetPlayerName(playerid, player_info[playerid][NAME], MAX_PLAYER_NAME);
 	SCM(playerid,COLOR_WHITE,"Welcome to Montana RolePlay");
 
-	TogglePlayerSpectating(playerid, 0);
+	TogglePlayerSpectating(playerid, 1);
 	InterpolateCameraPos(playerid, 1285.6528, -2037.6846, 100.6408, 13.4005, -2087.5444, 35.9909, 25000);
 	InterpolateCameraLookAt(playerid, 446.5704, -2036.8873, 45.9909, 367.5072, -1855.5072, 11.2946, 25000);
 
@@ -192,7 +192,7 @@ public OnPlayerSpawn(playerid)
 		return Kick(playerid);
 	}
 	SetPVarInt(playerid, "logged", 1);
-	SetPlayerSkin(playerid, player_info[playerid][SKIN]);
+	SetPlayerSkin(playerid, player_info[playerid][SKIN]); //skiin
 	SetPlayerPos(playerid, 1757.2987,-1896.4974,13.5610);
 	SetPlayerFacingAngle(playerid, 269.7200);
 	SetCameraBehindPlayer(playerid);
@@ -579,7 +579,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						format(string, sizeof(string), "[Error] {FFFFFF}You entered wrong password. You have %d attempts left.", GetPVarInt(playerid, "WrongPassword"));
 						SCM(playerid, COLOR_RED, string);
 					}
-					if(GetPVarInt(playerid, "WrongPassword") > 0)
+					if(GetPVarInt(playerid, "WrongPassword") == 0)
 					{
 						SCM(playerid, COLOR_RED, "[Error] {FFFFFF}You have no attempts left and was kicked from server.");
 						SPD(playerid,-1,0, " ", " ", " ", "");
@@ -618,7 +618,7 @@ public PlayerLogin(playerid)
 
 	    TogglePlayerSpectating(playerid, 0);
 		SetPVarInt(playerid, "logged", 1);
-		SetSpawnInfo(playerid, 0, 1757.1808,-1896.0137,13.5563, 0, 0, 0, 0, 0, 0, 0, 0);
+		SetSpawnInfo(playerid, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		SpawnPlayer(playerid);
 	}
 	return 1;
@@ -658,7 +658,7 @@ CMD:spawn(playerid)
 {
 	TogglePlayerSpectating(playerid, 0);
 	SetPVarInt(playerid, "logged", 1);
-	SetSpawnInfo(playerid, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+	SetSpawnInfo(playerid, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 	SpawnPlayer(playerid);
 }
 
