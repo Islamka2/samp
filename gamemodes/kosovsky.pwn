@@ -95,7 +95,7 @@ stock ConnectMySQL()
 	dbHandle = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASS, MYSQL_BASE);
  	switch(mysql_errno())
     {
-		case 0: print("mySQL is worked!");
+		case 0: print("mySQL worked!");
 		default: print("MySQL dead!");
 	}
 	mysql_log(ERROR | WARNING);
@@ -156,22 +156,26 @@ stock ShowLogin(playerid)
 {
 	new dialog[171+(-2+MAX_PLAYER_NAME)];
 	format(dialog, sizeof(dialog),
-	"{FFFFFF} Welcome {0089ff}%s{FFFFFF}, to {0089ff}Montana RolePlay!{FFFFFF}\n\
-	\tHello World!\n\n\
-	Nurminskiy top:",
+	"{FFFFFF} Dear {0089ff}%s{FFFFFF}, welcome back to {0089ff}Montana RolePlay!{FFFFFF}\n\
+	\t\tWe glad to see you back!\n\n\
+	For continue enter your password in box below:",
 	player_info[playerid][NAME]);
-	SPD(playerid, DLG_LOG, DIALOG_STYLE_INPUT, "{ffd100}Authorization{FFFFFF}", dialog, "Enter","Exit");
+	SPD(playerid, DLG_LOG, DIALOG_STYLE_INPUT, "{ffd100}Authorization{FFFFFF}", dialog, "Next","Exit");
 }
 
 stock ShowRegistration(playerid)
 {
-	SCM(playerid, COLOR_WHITE, "������ ������������ ���");
 	new dialog[403+(-2+MAX_PLAYER_NAME)];
 	format(dialog, sizeof(dialog),
-	    "{FFFFFF}����� �����! � ����, {0089ff}%s{FFFFFF}!\n����� ���������� �� {0089ff}Montana RolePlay!{FFFFFF}\n������� � ����� ����� �� ���������������\n��� ���� �� ��������, �� ������ ������ �����������",
+	    "{FFFFFF}Dear {0089ff}%s{FFFFFF}, we are happy to see you in {0089ff}Montana RolePlay!{FFFFFF}\n\
+		Account with this nickname is not registered\n\
+		to play on the server, you must register\n\n\
+		create a complex password for your account and press \"Next\"\n\
+		{ff9300}\t* Password must be 8-32 symbols long\n\
+		\t* Passwword must contain only numbers and Latin characters",
 		player_info[playerid][NAME]
 	);
-	SPD(playerid, DLG_REG, DIALOG_STYLE_INPUT, "{ffd100}�����������{FFFFFF} *������� ��� ������*", dialog, "�����","������");
+	SPD(playerid, DLG_REG, DIALOG_STYLE_INPUT, "{ffd100}Registration{FFFFFF} *Enter password*", dialog, "Enter","Exit");
 }
 
 public OnPlayerDisconnect(playerid, reason)
@@ -378,7 +382,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				if(!(8 <= strlen(inputtext) <= 32))
 				{
 					ShowRegistration(playerid);
-				    return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}Password must been 8 - 32 symbols!");
+				    return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}Password must be 8 - 32 symbols!");
 				}
 				new regex:rg_passwordcheck = regex_new("^[a-zA-Z0-9]{1,}$");
 				if(regex_check(inputtext,rg_passwordcheck))
@@ -392,21 +396,23 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					salt[10] = 0;
 					SHA256_PassHash(inputtext,salt,player_info[playerid][PASSWORD],65);
 					strmid(player_info[playerid][SALT], salt, 0, 11, 11);
-					SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT,"Registration - Email",
-					"Enter email",
-					"Next","");
+					SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT,"{ff9300}Registration{FFFFFF} * Enter Email",
+					"{FFFFFF}\t\t\tEnter your real email\n\
+					If you loss access to your account, you can restore it by your email\n\
+					\t\tEnter your email in box below and press \"Next\"",
+					"Next", "");
 				}
 				else
 				{
 					ShowRegistration(playerid);
 					regex_delete(rg_passwordcheck);
-	    			return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}1!");
+	    			return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}Password can contain only latin characters and numbers!");
 				}
 				regex_delete(rg_passwordcheck);
 			}
 			else
 			{
-			    SCM(playerid, COLOR_RED,"2");
+			    SCM(playerid, COLOR_RED,"Use \"/q\", to leave server");
 			    SPD(playerid,-1,0, " ", " ", " ", "");
 			    return Kick(playerid);
 			}
@@ -415,27 +421,32 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
   		{
   		    if(!strlen(inputtext))
   		    {
-					SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT, "����������� - ���� Email",
-					"������� email",
-					"�����","");
-                    return SCM(playerid,COLOR_RED, "[������] {FFFFFF}������� ��� email");
+					SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT, "{ff9300}Registration{FFFFFF} * Enter Email",
+					"{FFFFFF}\t\t\tEnter your real email\n\
+					If you loss access to your account, you can restore it by your email\n\
+					\t\tEnter your email in box below and press \"Next\"",
+					"Next", "");
+                    return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}Enter your email in box below and press \"Next\"");
 			}
 			new regex:rg_emailcheck = regex_new("^[a-zA-Z0-9.-_]{1,43}@[a-zA-Z]{1,12}.[a-zA-Z]{1,8}$");
 	  	    if(regex_check(inputtext,rg_emailcheck))
 	  	    {
 	  	        strmid(player_info[playerid][EMAIL], inputtext, 0, strlen(inputtext), 64);
-	  	        SPD(playerid,  DLG_REGREF, DIALOG_STYLE_INPUT, "����������� - ���� �������������",
-				"���� ��� ���������� ������� ��� ������������� � ���� �����:",
-				"�����", "����������"
+	  	        SPD(playerid,  DLG_REGREF, DIALOG_STYLE_INPUT, "{ff9300}Registration{FFFFFF} * Enter invite",
+				"{FFFFFF}If you joined server by invite, then\n\
+				you can specify nickname who invited you in box below:",
+				"Next", "Skip"
 				);
 	  	    }
 	  	    else
 			{
-				SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT,"����������� - ������� Email",
-				"������� ��������� Email",
-				"�����","");
+				SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT,"{ff9300}Registration{FFFFFF} * Enter Email",
+				"{FFFFFF}\t\t\tEnter your real email\n\
+				If you loss access to your account, you can restore it by your email\n\
+				\t\tEnter your email in box below and press \"Next\"",
+				"Next", "");
 				regex_delete(rg_emailcheck);
-    			return SCM(playerid,COLOR_RED, "[������] {FFFFFF}������� ��������� email");
+    			return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}Enter correct email");
 			}
 			regex_delete(rg_emailcheck);
 		}
@@ -479,27 +490,27 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 
 			new regmaleskins[9][4] = 
 			{
-				{19,21,22,28}, // ���������� 18-29
-				{24,25,36,67}, // ���������� 30-45
-				{14,142,182,183}, // ���������� 46-60
-				{29,96,101,26}, // ������������ 18-29
-				{2,37,72,202}, // ������������ 30-45
-				{1,3,234,290}, // ������������ 46-60
-				{23,60,170,180}, // ������������ 18-29
-				{20,47,48,206}, // ������������ 30-45
-				{44,58,132,229} // ������������ 46-60
+				{19,21,22,28}, // Negro 18-29
+				{24,25,36,67}, // Negro 30-45
+				{14,142,182,183}, // Negro 46-60
+				{29,96,101,26}, // Europian 18-29
+				{2,37,72,202}, // Europian 30-45
+				{1,3,234,290}, // Europian 46-60
+				{23,60,170,180}, // Asian 18-29
+				{20,47,48,206}, // Asian 30-45
+				{44,58,132,229} // Asian 46-60
 			};
 			new regfemaleskins[9][2] =
 			{
-				{13,69}, // ���������� 18-29
-				{9,160}, // ���������� 30-45
-				{10,218}, // ���������� 46-60
-				{41,59}, // ������������ 18-29
-				{31,151}, // ������������ 30-45
-				{39,89}, // ������������ 46-60
-				{169,193}, // ������������ 18-29
-				{207,225}, // ������������ 30-45
-				{54,130} // ������������ 46-60
+				{13,69}, // Negro 18-29
+				{9,160}, // Negro 30-45
+				{10,218}, // Negro 46-60
+				{41,59}, // Europian 18-29
+				{31,151}, // Europian 30-45
+				{39,89}, // Europian 46-60
+				{169,193}, // Asian 18-29
+				{207,225}, // Asian 30-45
+				{54,130} // Asian 46-60
 			};
 			new newskinindex;
 			switch(player_info[playerid][RACE])
@@ -533,8 +544,30 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			format(query, sizeof(query), fmt_query2, player_info[playerid][NAME],player_info[playerid][PASSWORD]);
 			mysql_tquery(dbHandle, query, "PlayerLogin", "id", playerid);
 		}
+		case DLG_LOG:
+		{
+			if (response)
+			{
+				new checkpass[65];
+				SHA256_PassHash(inputtext,player_info[playerid][SALT], checkpass, 65);
+				if (!strcmp(player_info[playerid][PASSWORD], checkpass))
+				{
+					SCM(playerid, COLOR_BLUE, "CORRECT PASSWORD");
+				}
+				else
+				{
+					SCM(playerid, COLOR_BLUE, "INCORRECT PASSWORD");
+					ShowLogin(playerid);
+				}
+			}
+			else
+			{
+			    SCM(playerid, COLOR_RED,"Use \"/q\", to leave server");
+			    SPD(playerid,-1,0, " ", " ", " ", "");
+			    return Kick(playerid);
+			}
+		}
 	}
-	
 	return 1;
 }
 
@@ -554,8 +587,6 @@ public PlayerLogin(playerid)
 	    cache_get_value_name_int(0, "skin", player_info[playerid][SKIN]);
 	    cache_get_value_name(0, "regdata", player_info[playerid][REGDATA], 12);
 	    cache_get_value_name(0, "regip", player_info[playerid][REGIP], 15);
-
-
 
 	    TogglePlayerSpectating(playerid, 0);
 		SetPVarInt(playerid, "logged", 1);
