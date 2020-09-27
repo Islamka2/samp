@@ -198,6 +198,8 @@ public OnPlayerSpawn(playerid)
 	SetCameraBehindPlayer(playerid);
 	SetPlayerVirtualWorld(playerid, 0);
 	SetPlayerInterior(playerid, 0);
+	//--
+
 	return 1;
 }
 
@@ -569,6 +571,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					new query[sizeof(fmt_query)+(2-MAX_PLAYER_NAME)+(-2+64)];
 					format(query, sizeof(query), fmt_query, player_info[playerid][NAME],player_info[playerid][PASSWORD]);
 					mysql_tquery(dbHandle, query, "PlayerLogin", "id", playerid);
+					Spawn(playerid);
 				}
 				else
 				{
@@ -585,6 +588,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						SPD(playerid,-1,0, " ", " ", " ", "");
 						return Kick(playerid);
 					}
+
 					ShowLogin(playerid);
 				}
 			}
@@ -620,6 +624,8 @@ public PlayerLogin(playerid)
 		SetPVarInt(playerid, "logged", 1);
 		SetSpawnInfo(playerid, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		SpawnPlayer(playerid);
+
+
 	}
 	return 1;
 }
@@ -662,7 +668,22 @@ CMD:spawn(playerid)
 	SpawnPlayer(playerid);
 }
 
+CMD:setskin(playerid, params[]) {
+    #define idskin params[0]
+    if(sscanf(params, "i", idskin)) {
+            return SendClientMessage(playerid, 0xFFFFFFFF,
+                !"enter: /setskin [ID skin]");
+	}
+        
+    return SetPlayerSkin(playerid,params[0]);
+}
 
+stock Spawn(playerid) {
+		TogglePlayerSpectating(playerid, 0);
+		SetPVarInt(playerid, "logged", 1);
+		SetSpawnInfo(playerid, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		SpawnPlayer(playerid);
+}
 //----------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------
 stock CreateMapping(){
@@ -805,5 +826,3 @@ stock CreateMapping(){
 
 
 }
-
-

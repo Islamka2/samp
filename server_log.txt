@@ -11690,3 +11690,634 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [00:56:35] [connection] incoming connection: 127.0.0.1:62020 id: 0
 [00:56:45] [connection] incoming connection: 127.0.0.1:62025 id: 0
 [00:56:45] [join] Loh has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[00:58:06] filterscripts = ""  (string)
+[00:58:06] 
+[00:58:06] Server Plugins
+[00:58:06] --------------
+[00:58:06]  Loading plugin: mysql
+[00:58:06]  >> plugin.mysql: R41-4 successfully loaded.
+[00:58:06]   Loaded.
+[00:58:06]  Loading plugin: crashdetect
+[00:58:06]   CrashDetect v4.18.1 is OK.
+[00:58:06]   Loaded.
+[00:58:06]  Loading plugin: streamer
+[00:58:06] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[00:58:06]   Loaded.
+[00:58:06]  Loading plugin: sscanf
+[00:58:06] 
+
+[00:58:06]  ===============================
+
+[00:58:06]       sscanf plugin loaded.     
+
+[00:58:06]          Version:  2.8.1        
+
+[00:58:06]    (c) 2012 Alex "Y_Less" Cole  
+
+[00:58:06]  ===============================
+
+[00:58:06]   Loaded.
+[00:58:06]  Loading plugin: pawncmd
+[00:58:06] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[00:58:06]   Loaded.
+[00:58:06]  Loading plugin: pawnregex
+[00:58:06] Pawn.Regex plugin v1.1 by urShadow loaded
+[00:58:06]   Loaded.
+[00:58:06]  Loaded 6 plugins.
+
+[00:58:06] 
+[00:58:06] Filterscripts
+[00:58:06] ---------------
+[00:58:06]   Loaded 0 filterscripts.
+
+[00:58:06] mySQL worked!
+[00:58:06] 
+----------------------------------
+[00:58:06] Montana RolePlay
+[00:58:06] ----------------------------------
+
+[00:58:06] Number of vehicle models: 2
+[00:58:13] [connection] 127.0.0.1:59614 requests connection cookie.
+[00:58:14] [connection] incoming connection: 127.0.0.1:59614 id: 0
+[00:58:14] [join] Loh has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:05:09] filterscripts = ""  (string)
+[01:05:09] 
+[01:05:09] Server Plugins
+[01:05:09] --------------
+[01:05:09]  Loading plugin: mysql
+[01:05:09]  >> plugin.mysql: R41-4 successfully loaded.
+[01:05:09]   Loaded.
+[01:05:09]  Loading plugin: crashdetect
+[01:05:09]   CrashDetect v4.18.1 is OK.
+[01:05:09]   Loaded.
+[01:05:09]  Loading plugin: streamer
+[01:05:09] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:05:09]   Loaded.
+[01:05:09]  Loading plugin: sscanf
+[01:05:09] 
+
+[01:05:09]  ===============================
+
+[01:05:09]       sscanf plugin loaded.     
+
+[01:05:09]          Version:  2.8.1        
+
+[01:05:09]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:05:09]  ===============================
+
+[01:05:09]   Loaded.
+[01:05:09]  Loading plugin: pawncmd
+[01:05:09] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:05:09]   Loaded.
+[01:05:09]  Loading plugin: pawnregex
+[01:05:09] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:05:09]   Loaded.
+[01:05:09]  Loaded 6 plugins.
+
+[01:05:09] 
+[01:05:09] Filterscripts
+[01:05:09] ---------------
+[01:05:09]   Loaded 0 filterscripts.
+
+[01:05:09] mySQL worked!
+[01:05:09] 
+----------------------------------
+[01:05:09] Montana RolePlay
+[01:05:09] ----------------------------------
+
+[01:05:09] Number of vehicle models: 2
+[01:05:16] [connection] 127.0.0.1:54158 requests connection cookie.
+[01:05:17] [connection] incoming connection: 127.0.0.1:54158 id: 0
+[01:05:17] [join] Loh has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:06:37] filterscripts = ""  (string)
+[01:06:37] 
+[01:06:37] Server Plugins
+[01:06:37] --------------
+[01:06:37]  Loading plugin: mysql
+[01:06:37]  >> plugin.mysql: R41-4 successfully loaded.
+[01:06:37]   Loaded.
+[01:06:37]  Loading plugin: crashdetect
+[01:06:37]   CrashDetect v4.18.1 is OK.
+[01:06:37]   Loaded.
+[01:06:37]  Loading plugin: streamer
+[01:06:37] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:06:37]   Loaded.
+[01:06:37]  Loading plugin: sscanf
+[01:06:37] 
+
+[01:06:37]  ===============================
+
+[01:06:37]       sscanf plugin loaded.     
+
+[01:06:37]          Version:  2.8.1        
+
+[01:06:37]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:06:37]  ===============================
+
+[01:06:37]   Loaded.
+[01:06:37]  Loading plugin: pawncmd
+[01:06:37] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:06:37]   Loaded.
+[01:06:37]  Loading plugin: pawnregex
+[01:06:37] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:06:37]   Loaded.
+[01:06:37]  Loaded 6 plugins.
+
+[01:06:37] 
+[01:06:37] Filterscripts
+[01:06:37] ---------------
+[01:06:37]   Loaded 0 filterscripts.
+
+[01:06:37] mySQL worked!
+[01:06:37] 
+----------------------------------
+[01:06:37] Montana RolePlay
+[01:06:37] ----------------------------------
+
+[01:06:37] Number of vehicle models: 2
+[01:06:43] [connection] 127.0.0.1:51290 requests connection cookie.
+[01:06:44] [connection] incoming connection: 127.0.0.1:51290 id: 0
+[01:06:44] [join] Loh has joined the server (0:127.0.0.1)
+[01:07:34] [connection] incoming connection: 127.0.0.1:54239 id: 1
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:07:41] filterscripts = ""  (string)
+[01:07:41] 
+[01:07:41] Server Plugins
+[01:07:41] --------------
+[01:07:41]  Loading plugin: mysql
+[01:07:41]  >> plugin.mysql: R41-4 successfully loaded.
+[01:07:41]   Loaded.
+[01:07:41]  Loading plugin: crashdetect
+[01:07:41]   CrashDetect v4.18.1 is OK.
+[01:07:41]   Loaded.
+[01:07:41]  Loading plugin: streamer
+[01:07:41] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:07:41]   Loaded.
+[01:07:41]  Loading plugin: sscanf
+[01:07:41] 
+
+[01:07:41]  ===============================
+
+[01:07:41]       sscanf plugin loaded.     
+
+[01:07:41]          Version:  2.8.1        
+
+[01:07:41]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:07:41]  ===============================
+
+[01:07:41]   Loaded.
+[01:07:41]  Loading plugin: pawncmd
+[01:07:41] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:07:41]   Loaded.
+[01:07:41]  Loading plugin: pawnregex
+[01:07:41] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:07:41]   Loaded.
+[01:07:41]  Loaded 6 plugins.
+
+[01:07:41] 
+[01:07:41] Filterscripts
+[01:07:41] ---------------
+[01:07:41]   Loaded 0 filterscripts.
+
+[01:07:41] mySQL worked!
+[01:07:41] 
+----------------------------------
+[01:07:41] Montana RolePlay
+[01:07:41] ----------------------------------
+
+[01:07:41] Number of vehicle models: 2
+[01:07:43] [connection] 127.0.0.1:54241 requests connection cookie.
+[01:07:44] [connection] incoming connection: 127.0.0.1:54241 id: 0
+[01:07:44] [join] Loh has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:10:48] filterscripts = ""  (string)
+[01:10:48] 
+[01:10:48] Server Plugins
+[01:10:48] --------------
+[01:10:48]  Loading plugin: mysql
+[01:10:48]  >> plugin.mysql: R41-4 successfully loaded.
+[01:10:48]   Loaded.
+[01:10:48]  Loading plugin: crashdetect
+[01:10:48]   CrashDetect v4.18.1 is OK.
+[01:10:48]   Loaded.
+[01:10:48]  Loading plugin: streamer
+[01:10:48] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:10:48]   Loaded.
+[01:10:48]  Loading plugin: sscanf
+[01:10:48] 
+
+[01:10:48]  ===============================
+
+[01:10:48]       sscanf plugin loaded.     
+
+[01:10:48]          Version:  2.8.1        
+
+[01:10:48]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:10:48]  ===============================
+
+[01:10:48]   Loaded.
+[01:10:48]  Loading plugin: pawncmd
+[01:10:48] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:10:48]   Loaded.
+[01:10:48]  Loading plugin: pawnregex
+[01:10:48] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:10:48]   Loaded.
+[01:10:48]  Loaded 6 plugins.
+
+[01:10:48] 
+[01:10:48] Filterscripts
+[01:10:48] ---------------
+[01:10:48]   Loaded 0 filterscripts.
+
+[01:10:48] mySQL worked!
+[01:10:48] 
+----------------------------------
+[01:10:48] Montana RolePlay
+[01:10:48] ----------------------------------
+
+[01:10:48] Number of vehicle models: 2
+[01:10:56] [connection] 127.0.0.1:62193 requests connection cookie.
+[01:10:57] [connection] incoming connection: 127.0.0.1:62193 id: 0
+[01:10:57] [join] Loh has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:12:52] filterscripts = ""  (string)
+[01:12:52] 
+[01:12:52] Server Plugins
+[01:12:52] --------------
+[01:12:52]  Loading plugin: mysql
+[01:12:52]  >> plugin.mysql: R41-4 successfully loaded.
+[01:12:52]   Loaded.
+[01:12:52]  Loading plugin: crashdetect
+[01:12:52]   CrashDetect v4.18.1 is OK.
+[01:12:52]   Loaded.
+[01:12:52]  Loading plugin: streamer
+[01:12:52] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:12:52]   Loaded.
+[01:12:52]  Loading plugin: sscanf
+[01:12:52] 
+
+[01:12:52]  ===============================
+
+[01:12:52]       sscanf plugin loaded.     
+
+[01:12:52]          Version:  2.8.1        
+
+[01:12:52]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:12:52]  ===============================
+
+[01:12:52]   Loaded.
+[01:12:52]  Loading plugin: pawncmd
+[01:12:52] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:12:52]   Loaded.
+[01:12:52]  Loading plugin: pawnregex
+[01:12:52] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:12:52]   Loaded.
+[01:12:52]  Loaded 6 plugins.
+
+[01:12:52] 
+[01:12:52] Filterscripts
+[01:12:52] ---------------
+[01:12:52]   Loaded 0 filterscripts.
+
+[01:12:52] mySQL worked!
+[01:12:52] 
+----------------------------------
+[01:12:52] Montana RolePlay
+[01:12:52] ----------------------------------
+
+[01:12:52] Number of vehicle models: 2
+[01:13:01] [connection] incoming connection: 127.0.0.1:50690 id: 1
+[01:13:05] [connection] incoming connection: 127.0.0.1:50692 id: 1
+[01:13:18] [part] Loh has left the server (0:0)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:13:23] filterscripts = ""  (string)
+[01:13:23] 
+[01:13:23] Server Plugins
+[01:13:23] --------------
+[01:13:23]  Loading plugin: mysql
+[01:13:23]  >> plugin.mysql: R41-4 successfully loaded.
+[01:13:23]   Loaded.
+[01:13:23]  Loading plugin: crashdetect
+[01:13:23]   CrashDetect v4.18.1 is OK.
+[01:13:23]   Loaded.
+[01:13:23]  Loading plugin: streamer
+[01:13:23] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:13:23]   Loaded.
+[01:13:23]  Loading plugin: sscanf
+[01:13:23] 
+
+[01:13:23]  ===============================
+
+[01:13:23]       sscanf plugin loaded.     
+
+[01:13:23]          Version:  2.8.1        
+
+[01:13:23]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:13:23]  ===============================
+
+[01:13:23]   Loaded.
+[01:13:23]  Loading plugin: pawncmd
+[01:13:23] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:13:23]   Loaded.
+[01:13:23]  Loading plugin: pawnregex
+[01:13:23] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:13:23]   Loaded.
+[01:13:23]  Loaded 6 plugins.
+
+[01:13:23] 
+[01:13:23] Filterscripts
+[01:13:23] ---------------
+[01:13:23]   Loaded 0 filterscripts.
+
+[01:13:23] mySQL worked!
+[01:13:23] 
+----------------------------------
+[01:13:23] Montana RolePlay
+[01:13:23] ----------------------------------
+
+[01:13:23] Number of vehicle models: 2
+[01:13:27] [connection] 127.0.0.1:52300 requests connection cookie.
+[01:13:28] [connection] incoming connection: 127.0.0.1:52300 id: 0
+[01:13:28] [join] Loh has joined the server (0:127.0.0.1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:26:42] filterscripts = ""  (string)
+[01:26:42] 
+[01:26:42] Server Plugins
+[01:26:42] --------------
+[01:26:42]  Loading plugin: mysql
+[01:26:42]  >> plugin.mysql: R41-4 successfully loaded.
+[01:26:42]   Loaded.
+[01:26:42]  Loading plugin: crashdetect
+[01:26:42]   CrashDetect v4.18.1 is OK.
+[01:26:42]   Loaded.
+[01:26:42]  Loading plugin: streamer
+[01:26:42] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:26:42]   Loaded.
+[01:26:42]  Loading plugin: sscanf
+[01:26:42] 
+
+[01:26:42]  ===============================
+
+[01:26:42]       sscanf plugin loaded.     
+
+[01:26:42]          Version:  2.8.1        
+
+[01:26:42]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:26:42]  ===============================
+
+[01:26:42]   Loaded.
+[01:26:42]  Loading plugin: pawncmd
+[01:26:42] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:26:42]   Loaded.
+[01:26:42]  Loading plugin: pawnregex
+[01:26:42] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:26:42]   Loaded.
+[01:26:42]  Loaded 6 plugins.
+
+[01:26:42] 
+[01:26:42] Filterscripts
+[01:26:42] ---------------
+[01:26:42]   Loaded 0 filterscripts.
+
+[01:26:42] mySQL worked!
+[01:26:42] 
+----------------------------------
+[01:26:42] Montana RolePlay
+[01:26:42] ----------------------------------
+
+[01:26:42] Number of vehicle models: 2
+[01:26:46] [connection] 127.0.0.1:51410 requests connection cookie.
+[01:26:47] [connection] incoming connection: 127.0.0.1:51410 id: 0
+[01:26:47] [join] Loh has joined the server (0:127.0.0.1)
+[01:26:56] sscanf warning: Format specifier does not match parameter count.
+[01:26:56] [debug] Run time error 5: "Invalid memory access"
+[01:26:56] [debug] AMX backtrace:
+[01:26:56] [debug] #0 0000013c in public pc_cmd_setskin () at C:\Users\islam\Desktop\test\pawno\include\fix.inc:20
+[01:26:56] [part] Loh has left the server (0:2)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:28:28] filterscripts = ""  (string)
+[01:28:28] 
+[01:28:28] Server Plugins
+[01:28:28] --------------
+[01:28:28]  Loading plugin: mysql
+[01:28:28]  >> plugin.mysql: R41-4 successfully loaded.
+[01:28:28]   Loaded.
+[01:28:28]  Loading plugin: crashdetect
+[01:28:28]   CrashDetect v4.18.1 is OK.
+[01:28:28]   Loaded.
+[01:28:28]  Loading plugin: streamer
+[01:28:28] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:28:28]   Loaded.
+[01:28:28]  Loading plugin: sscanf
+[01:28:28] 
+
+[01:28:28]  ===============================
+
+[01:28:28]       sscanf plugin loaded.     
+
+[01:28:28]          Version:  2.8.1        
+
+[01:28:28]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:28:28]  ===============================
+
+[01:28:28]   Loaded.
+[01:28:28]  Loading plugin: pawncmd
+[01:28:28] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:28:28]   Loaded.
+[01:28:28]  Loading plugin: pawnregex
+[01:28:28] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:28:28]   Loaded.
+[01:28:28]  Loaded 6 plugins.
+
+[01:28:28] 
+[01:28:28] Filterscripts
+[01:28:28] ---------------
+[01:28:28]   Loaded 0 filterscripts.
+
+[01:28:29] mySQL worked!
+[01:28:29] 
+----------------------------------
+[01:28:29] Montana RolePlay
+[01:28:29] ----------------------------------
+
+[01:28:29] Number of vehicle models: 2
+[01:28:33] [connection] 127.0.0.1:61881 requests connection cookie.
+[01:28:34] [connection] incoming connection: 127.0.0.1:61881 id: 0
+[01:28:34] [join] Loh has joined the server (0:127.0.0.1)
+[01:28:40] sscanf warning: Format specifier does not match parameter count.
+[01:28:42] sscanf warning: Format specifier does not match parameter count.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[01:29:35] filterscripts = ""  (string)
+[01:29:35] 
+[01:29:35] Server Plugins
+[01:29:35] --------------
+[01:29:35]  Loading plugin: mysql
+[01:29:35]  >> plugin.mysql: R41-4 successfully loaded.
+[01:29:35]   Loaded.
+[01:29:35]  Loading plugin: crashdetect
+[01:29:35]   CrashDetect v4.18.1 is OK.
+[01:29:35]   Loaded.
+[01:29:35]  Loading plugin: streamer
+[01:29:35] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[01:29:35]   Loaded.
+[01:29:35]  Loading plugin: sscanf
+[01:29:35] 
+
+[01:29:35]  ===============================
+
+[01:29:35]       sscanf plugin loaded.     
+
+[01:29:35]          Version:  2.8.1        
+
+[01:29:35]    (c) 2012 Alex "Y_Less" Cole  
+
+[01:29:35]  ===============================
+
+[01:29:35]   Loaded.
+[01:29:35]  Loading plugin: pawncmd
+[01:29:35] Pawn.CMD plugin v3.1.4 by urShadow loaded
+[01:29:35]   Loaded.
+[01:29:35]  Loading plugin: pawnregex
+[01:29:35] Pawn.Regex plugin v1.1 by urShadow loaded
+[01:29:35]   Loaded.
+[01:29:35]  Loaded 6 plugins.
+
+[01:29:35] 
+[01:29:35] Filterscripts
+[01:29:35] ---------------
+[01:29:35]   Loaded 0 filterscripts.
+
+[01:29:35] mySQL worked!
+[01:29:35] 
+----------------------------------
+[01:29:35] Montana RolePlay
+[01:29:35] ----------------------------------
+
+[01:29:35] Number of vehicle models: 2
+[01:29:40] [connection] 127.0.0.1:49621 requests connection cookie.
+[01:29:41] [connection] incoming connection: 127.0.0.1:49621 id: 0
+[01:29:42] [join] Loh has joined the server (0:127.0.0.1)
+[01:29:47] sscanf warning: Format specifier does not match parameter count.
+[01:29:48] sscanf warning: Format specifier does not match parameter count.
+[01:33:50] [part] Loh has left the server (0:0)
