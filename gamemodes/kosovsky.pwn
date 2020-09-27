@@ -131,10 +131,10 @@ public OnPlayerConnect(playerid)
 	InterpolateCameraPos(playerid, 1285.6528, -2037.6846, 100.6408, 13.4005, -2087.5444, 35.9909, 25000);
 	InterpolateCameraLookAt(playerid, 446.5704, -2036.8873, 45.9909, 367.5072, -1855.5072, 11.2946, 25000);
 
-	static const fmt_query[] = "SELECT `password`, `salt` FROM `users` WHERE `name` = '%s'";
+	static const fmt_query[] = "SELECT `password`, `salt` FROM `users` WHERE `nick` = '%s'";
 	new query[sizeof(fmt_query)+(-2+MAX_PLAYER_NAME)];
 	format(query, sizeof(query), fmt_query, player_info[playerid][NAME]);
-	mysql_tquery(dbHandle, query, "CheckRegistration", "id", playerid);
+	mysql_tquery(dbHandle, query, "CheckRegistration", "i", playerid);
 
 	SetPVarInt(playerid, "WrongPassword", 3);
 	return 1;
@@ -186,7 +186,13 @@ public OnPlayerDisconnect(playerid, reason)
 
 public OnPlayerSpawn(playerid)
 {
-	// 1757.2987,-1896.4974,13.5610,269.7200
+	if(GetPVarInt(playerid, "logged") == 0)
+	{
+		SCM(playerid, COLOR_RED, "[Error] {FFFFFF}You must authorize before you can play in server.");
+		return Kick(playerid);
+	}
+	SetPVarInt(playerid, "logged", 1);
+	SetPlayerSkin(playerid, player_info[playerid][SKIN]);
 	SetPlayerPos(playerid, 1757.2987,-1896.4974,13.5610);
 	SetPlayerFacingAngle(playerid, 269.7200);
 	SetCameraBehindPlayer(playerid);
@@ -547,7 +553,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			format(query, sizeof(query), fmt_query, player_info[playerid][NAME],player_info[playerid][PASSWORD],player_info[playerid][SALT],player_info[playerid][EMAIL], player_info[playerid][REF], player_info[playerid][SEX],player_info[playerid][RACE],player_info[playerid][AGE],player_info[playerid][SKIN],date, ip);
 			mysql_query(dbHandle, query);
 
-			static const fmt_query2[] = " SELECT * FROM `users` WHERE `name` = '%s' AND `password` = '%s'";
+			static const fmt_query2[] = " SELECT * FROM `users` WHERE `nick` = '%s' AND `password` = '%s'";
 			format(query, sizeof(query), fmt_query2, player_info[playerid][NAME],player_info[playerid][PASSWORD]);
 			mysql_tquery(dbHandle, query, "PlayerLogin", "id", playerid);
 		}
@@ -559,7 +565,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SHA256_PassHash(inputtext,player_info[playerid][SALT], checkpass, 65);
 				if (!strcmp(player_info[playerid][PASSWORD], checkpass))
 				{
-					static const fmt_query[] = " SELECT * FROM `users` WHERE `name` = '%s' AND `password` = '%s'";
+					static const fmt_query[] = " SELECT * FROM `users` WHERE `nick` = '%s' AND `password` = '%s'";
 					new query[sizeof(fmt_query)+(2-MAX_PLAYER_NAME)+(-2+64)];
 					format(query, sizeof(query), fmt_query, player_info[playerid][NAME],player_info[playerid][PASSWORD]);
 					mysql_tquery(dbHandle, query, "PlayerLogin", "id", playerid);
@@ -567,15 +573,17 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				else
 				{
 					new string[71];
+					SetPVarInt(playerid, "WrongPassword", GetPVarInt(playerid, "WrongPassword")-1);
 					if(GetPVarInt(playerid, "WrongPassword") > 0)
 					{
-						format(string, sizeof(string), "[Error] {FFFFFF} You entered wrong password. You have %d attempts left.", GetPVarInt(playerid, "WrongPassword"));
+						format(string, sizeof(string), "[Error] {FFFFFF}You entered wrong password. You have %d attempts left.", GetPVarInt(playerid, "WrongPassword"));
 						SCM(playerid, COLOR_RED, string);
 					}
 					if(GetPVarInt(playerid, "WrongPassword") > 0)
 					{
-						SCM(playerid, COLOR_RED, "[Error] {FFFFFF} You have no attempts left and was kicked from server.");
-						Kick(playerid);
+						SCM(playerid, COLOR_RED, "[Error] {FFFFFF}You have no attempts left and was kicked from server.");
+						SPD(playerid,-1,0, " ", " ", " ", "");
+						return Kick(playerid);
 					}
 					ShowLogin(playerid);
 				}
