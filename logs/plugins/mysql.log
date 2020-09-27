@@ -37,3 +37,5 @@
 [20:24:30] [ERROR] mysql_tquery: callback error: parameter count does not match format specifier length (c:\Users\Ermek\Desktop\Montana RP\gamemodes\kosovsky.pwn:136)
 [20:25:28] [ERROR] mysql_tquery: callback error: parameter count does not match format specifier length (c:\Users\Ermek\Desktop\Montana RP\gamemodes\kosovsky.pwn:136)
 [21:29:25] [ERROR] mysql_tquery: callback error: parameter count does not match format specifier length (c:\Users\Ermek\Desktop\Montana RP\gamemodes\kosovsky.pwn:136)
+[18:51:34] [ERROR] mysql_tquery: callback error: parameter count does not match format specifier length (d:\Games\Server\gamemodes\kosovsky.pwn:131)
+[19:02:49] [ERROR] mysql_tquery: callback error: parameter count does not match format specifier length (d:\Games\Server\gamemodes\kosovsky.pwn:135)
