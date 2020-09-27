@@ -125,10 +125,10 @@ public OnPlayerConnect(playerid)
 {
 	GetPlayerName(playerid, player_info[playerid][NAME], MAX_PLAYER_NAME);
 	SCM(playerid,COLOR_WHITE,"Welcome to Montana RolePlay");
-	TogglePlayerSpectating(playerid, 1);
+	TogglePlayerSpectating(playerid, 0);
 
-	InterpolateCameraPos(playerid, 1280.6528, -2037.6846, 75.6408+5.0, 13.4005, -2087.5444, 35.9909, 25000);
-	InterpolateCameraLookAt(playerid, 446.5704, -2036.8873, 35.9909-5.0, 367.5072, -1855.5072, 11.2946, 25000);
+	InterpolateCameraPos(playerid, 1285.6528, -2037.6846, 100.6408, 13.4005, -2087.5444, 35.9909, 25000);
+	InterpolateCameraLookAt(playerid, 446.5704, -2036.8873, 45.9909, 367.5072, -1855.5072, 11.2946, 25000);
 
 	static const fmt_query[] = "SELECT `password`, `salt` FROM `users` WHERE `name` = '%s'";
 	new query[sizeof(fmt_query)+(-2+MAX_PLAYER_NAME)];
@@ -624,4 +624,12 @@ public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ) {
 	SetPlayerPos(playerid, fX, fY, fZ);
 	return 1;
+}
+
+CMD:spawn(playerid)
+{
+	TogglePlayerSpectating(playerid, 0);
+	SetPVarInt(playerid, "logged", 1);
+	SetSpawnInfo(playerid, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+	SpawnPlayer(playerid);
 }
