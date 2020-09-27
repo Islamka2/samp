@@ -126,9 +126,11 @@ public OnPlayerConnect(playerid)
 {
 	GetPlayerName(playerid, player_info[playerid][NAME], MAX_PLAYER_NAME);
 	SCM(playerid,COLOR_WHITE,"Welcome to Montana RolePlay");
+
 	TogglePlayerSpectating(playerid, 0);
 	InterpolateCameraPos(playerid, 1285.6528, -2037.6846, 100.6408, 13.4005, -2087.5444, 35.9909, 25000);
 	InterpolateCameraLookAt(playerid, 446.5704, -2036.8873, 45.9909, 367.5072, -1855.5072, 11.2946, 25000);
+
 	static const fmt_query[] = "SELECT `password`, `salt` FROM `users` WHERE `name` = '%s'";
 	new query[sizeof(fmt_query)+(-2+MAX_PLAYER_NAME)];
 	format(query, sizeof(query), fmt_query, player_info[playerid][NAME]);
@@ -155,9 +157,7 @@ stock ShowLogin(playerid)
 {
 	new dialog[171+(-2+MAX_PLAYER_NAME)];
 	format(dialog, sizeof(dialog),
-	"{FFFFFF} Dear {0089ff}%s{FFFFFF}, welcome back to {0089ff}Montana RolePlay!{FFFFFF}\n\
-	\t\tWe glad to see you back!\n\n\
-	For continue enter your password in box below:",
+	"{FFFFFF} Dear {0089ff}%s{FFFFFF}, welcome back to {0089ff}Montana RolePlay!{FFFFFF}\nWe glad to see you back!\nFor continue enter your password in box below:",
 	player_info[playerid][NAME]);
 	SPD(playerid, DLG_LOG, DIALOG_STYLE_INPUT, "{ffd100}Authorization{FFFFFF}", dialog, "Next","Exit");
 }
@@ -184,6 +184,12 @@ public OnPlayerDisconnect(playerid, reason)
 
 public OnPlayerSpawn(playerid)
 {
+	// 1757.2987,-1896.4974,13.5610,269.7200
+	SetPlayerPos(playerid, 1757.2987,-1896.4974,13.5610);
+	SetPlayerFacingAngle(playerid, 269.7200);
+	SetCameraBehindPlayer(playerid);
+	SetPlayerVirtualWorld(playerid, 0);
+	SetPlayerInterior(playerid, 0);
 	return 1;
 }
 
@@ -354,7 +360,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{
 				case 0:
 				{
-					SetPlayerPos(playerid, 1757.1808,-1896.0137,13.5563);
+					SetPlayerPos(playerid, 1757.2987,-1896.4974,13.5610,269.7200);
 					SCM(playerid, COLOR_WHITE, "You have been teleported in Los-Santos");
 				}
 	  			case 1:
@@ -589,7 +595,7 @@ public PlayerLogin(playerid)
 
 	    TogglePlayerSpectating(playerid, 0);
 		SetPVarInt(playerid, "logged", 1);
-		SetSpawnInfo(playerid, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+		SetSpawnInfo(playerid, 0, 1757.1808,-1896.0137,13.5563, 0, 0, 0, 0, 0, 0, 0, 0);
 		SpawnPlayer(playerid);
 	}
 	return 1;
