@@ -3,3 +3,22 @@
 [15:24:56] [ERROR] error #1064 while executing query "INSERT INTO `users` (`nick`,`password`,`salt`,`email`,`ref`,`sex`,`race`,`age`,`skin`,`regdata`,`regip`) VALUES ('Thomas_Shelby','1E65922137AE31DABBEBBC80E1745FECE4A0100DD89351D3E91D6F061065C82E','v[t:QSdqTD','rsf@mail.ru','0','1','1',": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 (c:\Users\islam\Desktop\Arizona\gamemodes\kosovsky.pwn:530)
 [15:27:16] [ERROR] error #1064 while executing query "INSERT INTO `users` (`nick`,`password`,`salt`,`email`,`ref`,`sex`,`race`,`age`,`skin`,`regdata`,`regip`) VALUES ('Thomas_Shelby','51D969C97F996E962B75FBC869EF9FE926369EC216B5889E1CD56E6F117B7F30','@l=/iSPYBa','bla@mail.ru','0','1','3','1": You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1' at line 1 (c:\Users\islam\Desktop\Arizona\gamemodes\kosovsky.pwn:530)
  [15:37:44] [ERROR] error #1364 while executing query "INSERT INTO `users` (`nick`,`password`,`salt`,`email`,`ref`,`sex`,`race`,`age`,`skin`,`regdata`,`regip`) VALUES ('Thomas_Shelby','0F31E3284359D2E696B74A9E4242732958D276CBF3A69A456C304AC569465F27','BE<j][g`an','bla@mail.ru','0','1','1','18','22','20.09.2020','127.0.0.1')": Field 'id' doesn't have a default value (c:\Users\islam\Desktop\Arizona\gamemodes\kosovsky.pwn:530)
+[22:13:15] [ERROR] error #2013 while executing query "SELECT `id` FROM `users` WHERE `nick` = 'Robert_Shelby'": Lost connection to MySQL server during query (c:\Users\islam\Desktop\Arizona\gamemodes\kosovsky.pwn:131)
+[16:35:36] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:35:38] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:35:40] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:35:42] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:47:56] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:47:58] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:48:00] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:48:02] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:50:59] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:51:01] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:51:03] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[16:51:05] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[17:05:29] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[17:05:31] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[17:05:33] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[17:05:35] [ERROR] CConnection::CConnection - establishing connection to MySQL database failed: #2002 'Can't connect to MySQL server on '127.0.0.1' (10061)'
+[18:21:09] [ERROR] mysql_tquery: callback error: parameter count does not match format specifier length (c:\Users\islam\Desktop\Arizona\gamemodes\kosovsky.pwn:136)
+[18:22:57] [ERROR] mysql_tquery: callback error: parameter count does not match format specifier length (c:\Users\islam\Desktop\Arizona\gamemodes\kosovsky.pwn:136)

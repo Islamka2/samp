@@ -42,9 +42,9 @@ main()
 	print("Montana RolePlay");
 	print("----------------------------------\n");
 } 
-//=================================== Переменные =============================
+//=================================== пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ =============================
 
-//----------------------------------- Мусорка --------------------------------
+//----------------------------------- пїЅпїЅпїЅпїЅпїЅпїЅпїЅ --------------------------------
 new MySQL:dbHandle;
 //----------------------------------------------------------------------------
 
@@ -95,8 +95,8 @@ stock ConnectMySQL()
 	dbHandle = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASS, MYSQL_BASE);
  	switch(mysql_errno())
     {
-		case 0: print("mySQL запущен!");
-		default: print("MySQL не запущен!");
+		case 0: print("mySQL is worked!");
+		default: print("MySQL dead!");
 	}
 	mysql_log(ERROR | WARNING);
 	mysql_set_charset("cp1251");
@@ -124,11 +124,11 @@ public OnPlayerRequestClass(playerid, classid)
 public OnPlayerConnect(playerid)
 {
 	GetPlayerName(playerid, player_info[playerid][NAME], MAX_PLAYER_NAME);
-	SCM(playerid,COLOR_WHITE,"Добро Пожаловать на Montana RolePlay");
+	SCM(playerid,COLOR_WHITE,"Welcome to Montana RolePlay");
 	TogglePlayerSpectating(playerid, 1);
 
-	InterpolateCameraPos(playerid, 1280.6528, -2037.6846, 75.6408+5.0, 13.4005, -2087.5444, 35.9909, 25000)
-	InterpolateCameraLookAt(playerid, 446.5704, -2036.8873, 35.9909-5.0, 367.5072, -1855.5072, 11.2946, 25000)
+	InterpolateCameraPos(playerid, 1280.6528, -2037.6846, 75.6408+5.0, 13.4005, -2087.5444, 35.9909, 25000);
+	InterpolateCameraLookAt(playerid, 446.5704, -2036.8873, 35.9909-5.0, 367.5072, -1855.5072, 11.2946, 25000);
 
 	static const fmt_query[] = "SELECT `password`, `salt` FROM `users` WHERE `name` = '%s'";
 	new query[sizeof(fmt_query)+(-2+MAX_PLAYER_NAME)];
@@ -154,25 +154,24 @@ public CheckRegistration(playerid)
 
 stock ShowLogin(playerid)
 {
-	new dialog(171(-2+MAX_PLAYER_NAME));
+	new dialog[171+(-2+MAX_PLAYER_NAME)];
 	format(dialog, sizeof(dialog),
-	"{FFFFFF} Уважаемый {0089ff}%s{FFFFFF}, с возвращением на {0089ff}Montana RolePlay!{FFFFFF}\n\
-	\tМы рады снова видеть вас!\n\n\
-	Для продолжения введите свой пароль в поле ниже:",
-	player_info[playerid][NAME]
-	);
-	SPD(playerid, DLG_LOG, DIALOG_STYLE_INPUT, "{ffd100}Авторизация{FFFFFF}", dialog, "далее","отмена");
+	"{FFFFFF} Welcome {0089ff}%s{FFFFFF}, to {0089ff}Montana RolePlay!{FFFFFF}\n\
+	\tHello World!\n\n\
+	Nurminskiy top:",
+	player_info[playerid][NAME]);
+	SPD(playerid, DLG_LOG, DIALOG_STYLE_INPUT, "{ffd100}Authorization{FFFFFF}", dialog, "Enter","Exit");
 }
 
 stock ShowRegistration(playerid)
 {
-	SCM(playerid, COLOR_WHITE, "Такого пользователя нет");
+	SCM(playerid, COLOR_WHITE, "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ");
 	new dialog[403+(-2+MAX_PLAYER_NAME)];
 	format(dialog, sizeof(dialog),
-	    "{FFFFFF}Салам ворам! И тебе, {0089ff}%s{FFFFFF}!\nДобро пожаловать на {0089ff}Montana RolePlay!{FFFFFF}\nАккаунт с таким ником не зарегистрирован\nДля игры на серевере, Вы должны пройти регистрацию",
+	    "{FFFFFF}пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ! пїЅ пїЅпїЅпїЅпїЅ, {0089ff}%s{FFFFFF}!\nпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ {0089ff}Montana RolePlay!{FFFFFF}\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\nпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 		player_info[playerid][NAME]
 	);
-	SPD(playerid, DLG_REG, DIALOG_STYLE_INPUT, "{ffd100}Регистрация{FFFFFF} *Введите ваш пароль*", dialog, "далее","отмена");
+	SPD(playerid, DLG_REG, DIALOG_STYLE_INPUT, "{ffd100}пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ{FFFFFF} *пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ*", dialog, "пїЅпїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅпїЅ");
 }
 
 public OnPlayerDisconnect(playerid, reason)
@@ -209,8 +208,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 {
 	if (strcmp("/tp", cmdtext,true,10) == 0)
  	{
- 	    SCM(playerid,COLOR_WHITE,"Тест");
-		ShowPlayerDialog(playerid,DLG_TP,DIALOG_STYLE_LIST,"Куда летим","LS\nSF\nLV","Далее","Выйти");
+ 	    SCM(playerid,COLOR_WHITE,"пїЅпїЅпїЅпїЅ");
+		ShowPlayerDialog(playerid,DLG_TP,DIALOG_STYLE_LIST,"пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ","LS\nSF\nLV","пїЅпїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅ");
 		return 1;
 	}
 
@@ -353,17 +352,17 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				case 0:
 				{
 					SetPlayerPos(playerid, 1964.0826,-1145.1964, 25.9823);
-					SCM(playerid, COLOR_WHITE, "Вы были телепортированы в LS");
+					SCM(playerid, COLOR_WHITE, "You have been teleported in Los-Santos");
 				}
 	  			case 1:
 				{
      				SetPlayerPos(playerid, -1965.9000000,105.2000000,27.5000000);
-					SCM(playerid, COLOR_WHITE, "Вы были телепортированы в SF");
+					SCM(playerid, COLOR_WHITE, "You have been teleported in San-Fierro");
 				}
 	 			case 2:
 				{
 					SetPlayerPos(playerid, 1964.0826,-1145.1964, 25.9823);
-					SCM(playerid, COLOR_WHITE, "Вы были телепортированы в LS");
+					SCM(playerid, COLOR_WHITE, "You have been teleported in Las-Venturas");
 				}
 			}
 		}
@@ -374,12 +373,12 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				if(!strlen(inputtext))
 				{
 				    ShowRegistration(playerid);
-				    return SCM(playerid,COLOR_RED, "[Ошибка] {FFFFFF}Введите ваш пароль");
+				    return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}Enter correct paswword");
 				}
 				if(!(8 <= strlen(inputtext) <= 32))
 				{
 					ShowRegistration(playerid);
-				    return SCM(playerid,COLOR_RED, "[Ошибка] {FFFFFF}Пароль должен быть от 8 до 32 символов!");
+				    return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}Password must been 8 - 32 symbols!");
 				}
 				new regex:rg_passwordcheck = regex_new("^[a-zA-Z0-9]{1,}$");
 				if(regex_check(inputtext,rg_passwordcheck))
@@ -393,21 +392,21 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					salt[10] = 0;
 					SHA256_PassHash(inputtext,salt,player_info[playerid][PASSWORD],65);
 					strmid(player_info[playerid][SALT], salt, 0, 11, 11);
-					SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT,"Регистрация - Ваш Email",
-					"Введите ваш email",
-					"Далее","");
+					SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT,"Registration - Email",
+					"Enter email",
+					"Next","");
 				}
 				else
 				{
 					ShowRegistration(playerid);
 					regex_delete(rg_passwordcheck);
-	    			return SCM(playerid,COLOR_RED, "[Ошибка] {FFFFFF}Пароль должен состоять из чисел и латинских букв!");
+	    			return SCM(playerid,COLOR_RED, "[Error] {FFFFFF}1!");
 				}
 				regex_delete(rg_passwordcheck);
 			}
 			else
 			{
-			    SCM(playerid, COLOR_RED,"Пока");
+			    SCM(playerid, COLOR_RED,"2");
 			    SPD(playerid,-1,0, " ", " ", " ", "");
 			    return Kick(playerid);
 			}
@@ -416,27 +415,27 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
   		{
   		    if(!strlen(inputtext))
   		    {
-					SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT, "Регистрация - Ввод Email",
-					"Введиет email",
-					"Далее","");
-                    return SCM(playerid,COLOR_RED, "[Ошибка] {FFFFFF}Введите Ваш email");
+					SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅ Email",
+					"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ email",
+					"пїЅпїЅпїЅпїЅпїЅ","");
+                    return SCM(playerid,COLOR_RED, "[пїЅпїЅпїЅпїЅпїЅпїЅ] {FFFFFF}пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ email");
 			}
 			new regex:rg_emailcheck = regex_new("^[a-zA-Z0-9.-_]{1,43}@[a-zA-Z]{1,12}.[a-zA-Z]{1,8}$");
 	  	    if(regex_check(inputtext,rg_emailcheck))
 	  	    {
 	  	        strmid(player_info[playerid][EMAIL], inputtext, 0, strlen(inputtext), 64);
-	  	        SPD(playerid,  DLG_REGREF, DIALOG_STYLE_INPUT, "Регистрация - Ввод пригласившего",
-				"Если вас пригласили введите ник пригласившего в поле снизу:",
-				"Далее", "Пропустить"
+	  	        SPD(playerid,  DLG_REGREF, DIALOG_STYLE_INPUT, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+				"пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:",
+				"пїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 				);
 	  	    }
 	  	    else
 			{
-				SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT,"Регистрация - Введите Email",
-				"Введите настоящий Email",
-				"Далее","");
+				SPD(playerid, DLG_REGEMAIL, DIALOG_STYLE_INPUT,"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email",
+				"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Email",
+				"пїЅпїЅпїЅпїЅпїЅ","");
 				regex_delete(rg_emailcheck);
-    			return SCM(playerid,COLOR_RED, "[Ошибка] {FFFFFF}Укажите правильно email");
+    			return SCM(playerid,COLOR_RED, "[пїЅпїЅпїЅпїЅпїЅпїЅ] {FFFFFF}пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ email");
 			}
 			regex_delete(rg_emailcheck);
 		}
@@ -451,56 +450,56 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			else
 			{
-				SPD(playerid, DLG_REGSEX, DIALOG_STYLE_MSGBOX, "Регистрация - Выбор пола", "Выбор пола вашего персонажа", "Мужской", "Женский");
+				SPD(playerid, DLG_REGSEX, DIALOG_STYLE_MSGBOX, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 			}
 		}
 		case DLG_REGSEX:
 		{
 			player_info[playerid][SEX] = (response) ? (1) : (2);
-			SPD(playerid,DLG_REGRACE, DIALOG_STYLE_LIST, "Регистрация - Выбор расы персонажа", "Негроидная\nЕвропеоидная\nАзиатская", "Далее", "");
+			SPD(playerid,DLG_REGRACE, DIALOG_STYLE_LIST, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\nпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅ", "");
 		}
 		case DLG_REGRACE:
 		{
 		    player_info[playerid][RACE] = listitem + 1;
-			SPD(playerid,DLG_REGAGE, DIALOG_STYLE_INPUT, "Регистрация - Выбор возраста персонажа","Введите возраст персонажа", "Далее", "");
+			SPD(playerid,DLG_REGAGE, DIALOG_STYLE_INPUT, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅ", "");
 		}
 		case DLG_REGAGE:
 		{
 			if(!strlen(inputtext))
 			{
-				SPD(playerid,DLG_REGAGE, DIALOG_STYLE_INPUT, "Регистрация - Выбор возраста персонажа","Введите возраст персонажа", "Далее", "");
-				return SCM(playerid, COLOR_RED, "[Ошибка] Вы не ввели Ваш возраст!");
+				SPD(playerid,DLG_REGAGE, DIALOG_STYLE_INPUT, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅ", "");
+				return SCM(playerid, COLOR_RED, "[пїЅпїЅпїЅпїЅпїЅпїЅ] пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
 			}
 			if (!(18 <= strval(inputtext) <= 60))
 			{
-				SPD(playerid,DLG_REGAGE, DIALOG_STYLE_INPUT, "Регистрация - Выбор возраста персонажа","Введите возраст персонажа", "Далее", "");
-				return SCM(playerid, COLOR_RED, "[Ошибка] Введите возраст от 18 до 60 Ваш возраст!");
+				SPD(playerid,DLG_REGAGE, DIALOG_STYLE_INPUT, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ","пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅ", "");
+				return SCM(playerid, COLOR_RED, "[пїЅпїЅпїЅпїЅпїЅпїЅ] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 18 пїЅпїЅ 60 пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
 			}
 			player_info[playerid][AGE] = strval(inputtext);
 
 			new regmaleskins[9][4] = 
 			{
-				{19,21,22,28}, // НЕГРОИДНАЯ 18-29
-				{24,25,36,67}, // НЕГРОИДНАЯ 30-45
-				{14,142,182,183}, // НЕГРОИДНАЯ 46-60
-				{29,96,101,26}, // ЕВРОПЕОИДНАЯ 18-29
-				{2,37,72,202}, // ЕВРОПЕОИДНАЯ 30-45
-				{1,3,234,290}, // ЕВРОПЕОИДНАЯ 46-60
-				{23,60,170,180}, // МОНГОЛОИДНАЯ 18-29
-				{20,47,48,206}, // МОНГОЛОИДНАЯ 30-45
-				{44,58,132,229} // МОНГОЛОИДНАЯ 46-60
+				{19,21,22,28}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 18-29
+				{24,25,36,67}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 30-45
+				{14,142,182,183}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 46-60
+				{29,96,101,26}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 18-29
+				{2,37,72,202}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 30-45
+				{1,3,234,290}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 46-60
+				{23,60,170,180}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 18-29
+				{20,47,48,206}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 30-45
+				{44,58,132,229} // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 46-60
 			};
 			new regfemaleskins[9][2] =
 			{
-				{13,69}, // НЕГРОИДНАЯ 18-29
-				{9,160}, // НЕГРОИДНАЯ 30-45
-				{10,218}, // НЕГРОИДНАЯ 46-60
-				{41,59}, // ЕВРОПЕОИДНАЯ 18-29
-				{31,151}, // ЕВРОПЕОИДНАЯ 30-45
-				{39,89}, // ЕВРОПЕОИДНАЯ 46-60
-				{169,193}, // МОНГОЛОИДНАЯ 18-29
-				{207,225}, // МОНГОЛОИДНАЯ 30-45
-				{54,130} // МОНГОЛОИДНАЯ 46-60
+				{13,69}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 18-29
+				{9,160}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 30-45
+				{10,218}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 46-60
+				{41,59}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 18-29
+				{31,151}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 30-45
+				{39,89}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 46-60
+				{169,193}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 18-29
+				{207,225}, // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 30-45
+				{54,130} // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 46-60
 			};
 			new newskinindex;
 			switch(player_info[playerid][RACE])
@@ -519,7 +518,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			else player_info[playerid][SKIN] = regfemaleskins[newskinindex][random(2)];
 			new Year, Month, Day;
 			getdate(Year, Month, Day);
-			SCM(playerid,COLOR_BLUE,"Регистрация завершена, приятной игры");
+			SCM(playerid,COLOR_BLUE,"Р°Р»Р»РѕРѕРѕРѕРѕРѕРѕ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ");
 			new date[13];
 			format(date, sizeof(date),"%02d.%02d.%02d", Day, Month, Year);
 			new ip[16];
@@ -560,7 +559,7 @@ public PlayerLogin(playerid)
 
 	    TogglePlayerSpectating(playerid, 0);
 		SetPVarInt(playerid, "logged", 1);
-		SetSpawnInfo(playerid, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,)
+		SetSpawnInfo(playerid, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 		SpawnPlayer(playerid);
 	}
 	return 1;
@@ -574,20 +573,24 @@ public CheckReferal(playerid,referal[])
 	if(rows)
 	{
 		cache_get_value_name_int(0, "id", player_info[playerid][REF]);
-		SPD(playerid, DLG_REGSEX, DIALOG_STYLE_MSGBOX, "Регистрация - Выбор пола", "Выбор пола вашего персонажа", "Мужской", "Женский");
+		SPD(playerid, DLG_REGSEX, DIALOG_STYLE_MSGBOX, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 	}
 	else
 	{
-		SPD(playerid,  DLG_REGREF, DIALOG_STYLE_INPUT, "Регистрация - Ввод пригласившего",
-		"Если вас пригласили введите ник пригласившего в поле снизу:",
-		"Далее", "Пропустить"
+		SPD(playerid,  DLG_REGREF, DIALOG_STYLE_INPUT, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+		"пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:",
+		"пїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 		);
-	    return SCM(playerid, COLOR_RED, "[Ошибка] {FFFFFF}Такого игрока не существует! ");
+	    return SCM(playerid, COLOR_RED, "[пїЅпїЅпїЅпїЅпїЅпїЅ] {FFFFFF}пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ! ");
 	}
 	return 1;
 }
 
 public OnPlayerClickPlayer(playerid, clickedplayerid, source)
 {
+	return 1;
+}
+public OnPlayerClickMap(playerid, Float:fX, Float:fY, Float:fZ) {
+	SetPlayerPos(playerid, fX, fY, fZ);
 	return 1;
 }
